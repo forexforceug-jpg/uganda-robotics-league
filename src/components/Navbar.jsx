@@ -26,8 +26,6 @@ function Navbar() {
               <div className="logo-icon">
                 <span className="logo-url">URL</span>
                 <div className="logo-emblem">
-                  <span className="emblem-red"></span>
-                  <span className="emblem-white"></span>
                 </div>
               </div>
               <span className="logo-sub">Uganda Robotics League</span>

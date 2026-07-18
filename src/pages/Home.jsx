@@ -7,22 +7,22 @@ function Home() {
     {
       title: 'Primary Robotics',
       description: 'Young learners explore robotics fundamentals through hands-on activities.',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=Primary+Robotics'
+      image: '../../public/primary.jpg'
     },
     {
       title: 'Lower Secondary Robotics',
       description: 'Students collaborate on exciting robotics projects and challenges.',
-      image: 'https://via.placeholder.com/400x200/2d6a9f/ffffff?text=Lower+Secondary'
+      image: '../../public/secondary.jpg'
     },
     {
       title: 'Advanced Secondary Robotics',
       description: 'Advanced students program and test competition-ready robots.',
-      image: 'https://via.placeholder.com/400x200/ff0000/ffffff?text=Advanced+Robotics'
+      image: '../../public/highschool.jpg'
     },
     {
       title: 'University & Open Innovation',
       description: 'University students work on cutting-edge robotics and AI solutions.',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=University+Innovation'
+      image: '../../public/innovation.jpg'
     }
   ];
 
@@ -40,19 +40,19 @@ function Home() {
       date: 'June 15, 2026',
       title: 'URL 2025 Champions Crowned!',
       description: 'Team Innovators from Kampala take the top prize in an exciting finale.',
-      image: 'https://via.placeholder.com/400x200/ffd700/000000?text=Champions+2025'
+      image: '../../public/competition.jpg'
     },
     {
       date: 'June 10, 2026',
       title: 'Building Confidence Through Robotics',
       description: 'How robotics education is transforming student leadership skills.',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=Confidence+Through+Robotics'
+      image: '../../public/news.jpg'
     },
     {
       date: 'June 5, 2026',
       title: 'Coaches Training Workshop in Jinja',
       description: 'Educators gather to learn new strategies for robotics coaching.',
-      image: 'https://via.placeholder.com/400x200/2d6a9f/ffffff?text=Coaches+Workshop'
+      image: '../../public/news1.jpg'
     }
   ];
 
@@ -67,33 +67,39 @@ function Home() {
 
   return (
     <div className="home-page">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>
-              Building Uganda's<br />
-              <span className="hero-highlight">Next Generation</span><br />
-              of Innovators
-            </h1>
-            <p>
-              The Uganda Robotics League brings students, schools, and communities together
-              through robotics education and exciting competitions.
-            </p>
-            <div className="hero-buttons">
-              <button className="btn-hero-primary">Explore the League</button>
-              <button className="btn-hero-secondary">Register Your Team</button>
-            </div>
-          </div>
-        </div>
-        <div className="hero-slider-dots">
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-        </div>
-      </section>
+     {/* Hero Section */}
+<section className="hero-section">
+  <div className="hero-overlay"></div>
+  <div className="hero-content">
+    <div className="hero-text">
+      <h1>
+        Building Uganda's<br />
+        <span className="hero-highlight">Next Generation</span><br />
+        of Innovators
+      </h1>
+      <p>
+        The Uganda Robotics League brings students, schools, and communities together
+        through robotics education and exciting competitions.
+      </p>
+      <div className="hero-buttons">
+        <button className="btn-hero-primary">Explore the League</button>
+        <button className="btn-hero-secondary">Register Your Team</button>
+      </div>
+    </div>
+    <div className="hero-image">
+      <img 
+        src="../../public/heroimg.jpg" 
+        alt="Ugandan students building a robot" 
+      />
+    </div>
+  </div>
+  <div className="hero-slider-dots">
+    <span className="dot active"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
+  </div>
+</section>
 
       {/* Statistics Panel */}
       <div className="stats-panel">
@@ -179,7 +185,7 @@ function Home() {
             </div>
           </div>
           <div className="season-image">
-            <img src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Competition+Arena" alt="Competition Arena" />
+            <img src="../../public/competition.jpg" alt="Competition Arena" />
           </div>
         </div>
       </section>
