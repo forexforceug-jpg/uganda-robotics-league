@@ -1,0 +1,638 @@
+/* Partners Page Styles */
+.partners-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.partners-hero {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.partners-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 70%, transparent 100%);
+}
+
+.partners-hero-content {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  z-index: 2;
+}
+
+.partners-hero-left {
+  color: white;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #999;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: #ff0000;
+}
+
+.breadcrumb-current {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.partners-hero-left h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.partners-hero-left p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ccc;
+  max-width: 550px;
+  margin-bottom: 2rem;
+}
+
+.btn-hero-partner {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-hero-partner:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+}
+
+.partners-hero-right {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.partners-hero-right img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.red-underline {
+  width: 60px;
+  height: 4px;
+  background: #ff0000;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Ecosystem Section */
+.ecosystem-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.ecosystem-description {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.categories-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.category-card {
+  background: #f8f9fa;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.category-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Valued Partners */
+.valued-partners {
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+}
+
+.partner-filters {
+  max-width: 1400px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid #e0e0e0;
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-tab:hover {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.filter-tab.active {
+  background: #ff0000;
+  color: white;
+  border-color: #ff0000;
+}
+
+.partner-tier {
+  max-width: 1400px;
+  margin: 0 auto 3rem;
+}
+
+.partner-tier:last-child {
+  margin-bottom: 0;
+}
+
+.tier-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.tier-title.platinum {
+  color: #e5e4e2;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tier-title.gold {
+  color: #ffd700;
+}
+
+.tier-title.silver {
+  color: #c0c0c0;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.partner-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.partner-card.platinum {
+  border-top: 4px solid #e5e4e2;
+}
+
+.partner-card.gold {
+  border-top: 4px solid #ffd700;
+}
+
+.partner-card.silver {
+  border-top: 4px solid #c0c0c0;
+}
+
+.partner-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner-role {
+  color: #999;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Impact Section */
+.impact-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.impact-stats {
+  max-width: 1400px;
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.impact-stat {
+  text-align: center;
+  padding: 1rem;
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 0.75rem;
+}
+
+.impact-number {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.impact-label {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Testimonial */
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+}
+
+.testimonial-nav {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.testimonial-nav:hover {
+  background: #ff0000;
+  color: white;
+  border-color: #ff0000;
+}
+
+.testimonial-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.testimonial-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 4px solid #ff0000;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  flex: 1;
+  position: relative;
+}
+
+.testimonial-quote {
+  font-size: 2.5rem;
+  color: #ff0000;
+  opacity: 0.3;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 800;
+  color: #ff0000;
+  font-size: 1.1rem;
+}
+
+.author-title {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* CTA Banner */
+.partners-cta {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.cta-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cta-left h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.cta-left p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+}
+
+.cta-right {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cta-primary {
+  background: white;
+  color: #ff0000;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-secondary:hover {
+  background: white;
+  color: #ff0000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partners-hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .partners-hero-left h1 {
+    font-size: 2.8rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-right {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-right button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-hero-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .partners-hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-filters {
+    gap: 0.5rem;
+  }
+
+  .filter-tab {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .testimonial-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cta-left h2 {
+    font-size: 2rem;
+  }
+
+  .impact-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .partners-hero-left p {
+    font-size: 1rem;
+  }
+
+  .partners-hero-right img {
+    height: 200px;
+  }
+
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .tier-title {
+    font-size: 1.2rem;
+  }
+
+  .partner-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-text p {
+    font-size: 1rem;
+  }
+}
