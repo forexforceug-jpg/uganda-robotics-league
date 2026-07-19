@@ -24,7 +24,7 @@ function Navbar() {
           <Link to="/" className="nav-logo">
             <div className="logo-wrapper">
               <img 
-                src="../../public/logourl.png" 
+                src="/logourl.png" 
                 alt="Uganda Robotics League Logo" 
                 className="logo-image"
               />

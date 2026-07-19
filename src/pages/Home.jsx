@@ -7,22 +7,22 @@ function Home() {
     {
       title: 'Primary Robotics',
       description: 'Young learners explore robotics fundamentals through hands-on activities.',
-      image: '../../public/primarystds.jpg'
+      image: '/primarystds.jpg'
     },
     {
       title: 'Lower Secondary Robotics',
       description: 'Students collaborate on exciting robotics projects and challenges.',
-      image: '../../public/secondary.jpg'
+      image: '/secondary.jpg'
     },
     {
       title: 'Advanced Secondary Robotics',
       description: 'Advanced students program and test competition-ready robots.',
-      image: '../../public/highschool.jpg'
+      image: '/highschool.jpg'
     },
     {
       title: 'Open Innovation',
       description: 'Students work on cutting-edge robotics and AI solutions.',
-      image: '../../public/innovation.jpg'
+      image: '/innovation.jpg'
     }
   ];
 
@@ -40,24 +40,24 @@ function Home() {
       date: 'June 15, 2026',
       title: 'URL 2025 Champions Crowned!',
       description: 'Team Innovators from Kampala take the top prize in an exciting finale.',
-      image: '../../public/competition.jpg'
+      image: '/competition.jpg'
     },
     {
       date: 'June 10, 2026',
       title: 'Building Confidence Through Robotics',
       description: 'How robotics education is transforming student leadership skills.',
-      image: '../../public/news.jpg'
+      image: '/news.jpg'
     },
     {
       date: 'June 5, 2026',
       title: 'Coaches Training Workshop in Jinja',
       description: 'Educators gather to learn new strategies for robotics coaching.',
-      image: '../../public/news1.jpg'
+      image: '/news1.jpg'
     }
   ];
 
   const partners = [
-    { name: 'Just Cause Education Outreach', logo: '../../public/logourl.png' },
+    { name: 'Just Cause Education Outreach', logo: '/logourl.png' },
     { name: 'VEX Robotics', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=VEX' },
     { name: 'Makerere University', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=Makerere' },
     { name: 'Jinja Techub', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=NITA-U' },
@@ -88,7 +88,7 @@ function Home() {
     </div>
     <div className="hero-image">
       <img 
-        src="../../public/heroimg.jpg" 
+        src="/heroimg.jpg" 
         alt="Ugandan students building a robot" 
       />
     </div>
@@ -185,7 +185,7 @@ function Home() {
             </div>
           </div>
           <div className="season-image">
-            <img src="../../public/competition.jpg" alt="Competition Arena" />
+            <img src="/competition.jpg" alt="Competition Arena" />
           </div>
         </div>
       </section>

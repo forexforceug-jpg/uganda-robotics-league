@@ -59,7 +59,7 @@ function Resources() {
     {
       title: 'URL 2026 Game Manual',
       description: 'The official manual for the 2026 competition season.',
-      image: '../../public/manual.png',
+      image: '/manual.png',
       category: 'Competition Resources',
       format: 'PDF',
       size: '4.2 MB'
@@ -67,7 +67,7 @@ function Resources() {
     {
       title: 'Starter Robot Build Guide',
       description: 'A step-by-step guide for building a competition-ready robot.',
-      image: '../../public/instructions.jpg',
+      image: '/instructions.jpg',
       category: 'Build Instructions',
       format: 'PDF',
       size: '3.8 MB'
@@ -75,7 +75,7 @@ function Resources() {
     {
       title: 'Python Basics for Robotics',
       description: 'Learn the fundamentals of Python programming for robotics beginners.',
-      image: '../../public/python.jpg',
+      image: '/python.jpg',
       category: 'Programming Guides',
       format: 'PDF',
       size: '5.1 MB'
@@ -83,7 +83,7 @@ function Resources() {
     {
       title: '2026 Field Setup Guide',
       description: 'Field dimensions, setup instructions, and game element details.',
-      image: '../../public/field.png',
+      image: '/field.png',
       category: 'Competition Resources',
       format: 'PDF',
       size: '6.3 MB'
@@ -94,19 +94,19 @@ function Resources() {
     {
       title: 'Understanding the 2026 Game',
       description: 'Learn the competition rules and scoring system.',
-      image: '../../public/game.jpg',
+      image: '/game.jpg',
       duration: '12:30'
     },
     {
       title: 'Building a Strong Robot Chassis',
       description: 'Robot construction techniques and mechanical reliability.',
-      image: '../../public/game.jpg',
+      image: '/game.jpg',
       duration: '18:45'
     },
     {
       title: 'Programming Autonomous Modes',
       description: 'Learn how to program autonomous routines for your robot.',
-      image: '../../public/auto.png',
+      image: '/auto.png',
       duration: '15:20'
     }
   ];
@@ -158,7 +158,7 @@ function Resources() {
           </div>
           <div className="resources-hero-right">
             <img 
-              src="../../public/robot3.jpeg" 
+              src="/robot3.jpeg" 
               alt="Students working on a robot in a laboratory" 
             />
           </div>

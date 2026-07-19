@@ -12,8 +12,8 @@ function Teams() {
       description: 'Passionate innovators building robots and solutions for a better tomorrow.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: '../../public/competition3.jpg',
-      logo: '../../public/competition3.jpg'
+      image: '/competition3.jpg',
+      logo: '/competition3.jpg'
     },
     {
       name: 'The Fusebots',
@@ -22,8 +22,8 @@ function Teams() {
       description: 'Excellence, teamwork, engineering, and innovation through robotics.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: '../../public/fusebots.jpg',
-      logo: '../../public/fusebots.jpg'
+      image: '/fusebots.jpg',
+      logo: '/fusebots.jpg'
     },
     {
       name: 'Tech Titans',
@@ -32,8 +32,8 @@ function Teams() {
       description: 'Programming, precision, and competitive robotics excellence.',
       level: 'Lower Secondary',
       category: 'Line Follower',
-      image: '../../public/techtitans.jpg',
-      logo: '../../public/techtitans.jpg'
+      image: '/techtitans.jpg',
+      logo: '/techtitans.jpg'
     },
     {
       name: 'Igabots 1',
@@ -42,8 +42,8 @@ function Teams() {
       description: 'Innovation and leadership through robotics engineering.',
       level: 'Advanced Secondary',
       category: 'Robot Combat',
-      image: '../../public/igabots1.jpg',
-      logo: '../../public/igabots1.jpg'
+      image: '/igabots1.jpg',
+      logo: '/igabots1.jpg'
     },
     {
       name: 'VoraBots',
@@ -52,8 +52,8 @@ function Teams() {
       description: 'Creativity through coding and robotics innovation.',
       level: 'Lower Secondary',
       category: 'Maze Solver',
-      image: '../../public/vorabots.jpg',
-      logo: '../../public/vorabots.jpg'
+      image: '/vorabots.jpg',
+      logo: '/vorabots.jpg'
     },
     {
       name: 'Smith Bots',
@@ -62,8 +62,8 @@ function Teams() {
       description: 'Engineering strong, future-ready robots for competition.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: '../../public/smith.jpg',
-      logo: '../../public/smith.jpg'
+      image: '/smith.jpg',
+      logo: '/smith.jpg'
     },
     {
       name: 'Y-Botics II',
@@ -72,8 +72,8 @@ function Teams() {
       description: 'Rising above challenges through innovation and teamwork.',
       level: 'Advanced Secondary',
       category: 'Innovation Challenge',
-      image: '../../public/ybots.jpg',
-      logo: '../../public/ybots.jpg'
+      image: '/ybots.jpg',
+      logo: '/ybots.jpg'
     },
     {
       name: 'Cyber Nights',
@@ -82,8 +82,8 @@ function Teams() {
       description: 'Discipline, passion, and innovation in Line Follower competitions.',
       level: 'Advanced Secondary',
       category: 'Line Follower',
-      image: '../../public/cyber.jpg',
-      logo: '../../public/cyber.jpg'
+      image: '/cyber.jpg',
+      logo: '/cyber.jpg'
     }
   ];
 
@@ -120,7 +120,7 @@ function Teams() {
           </div>
           <div className="teams-hero-right">
             <img 
-              src="../../public/team1.jpg" 
+              src="/team1.jpg" 
               alt="Students building a competition robot" 
             />
           </div>
@@ -195,7 +195,7 @@ function Teams() {
         <div className="featured-container">
           <div className="featured-image">
             <img 
-              src="../../public/competition3.jpg" 
+              src="/competition3.jpg" 
               alt="J-Robotics team in competition" 
             />
           </div>

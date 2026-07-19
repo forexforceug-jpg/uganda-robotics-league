@@ -87,7 +87,7 @@ function Contact() {
           </div>
           <div className="contact-hero-right">
             <img 
-              src="../../public/contactus.jpg" 
+              src="/contactus.jpg" 
               alt="Students collaborating on a robot" 
             />
           </div>

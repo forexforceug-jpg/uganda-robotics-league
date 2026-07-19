@@ -9,7 +9,7 @@ function About() {
       name: 'Mischell Massaro',
       role: 'Founder',
       bio: 'Engineer and strategist focused on creating impactful learning experiences and building strong robotics programs.',
-      image: '../../public/image.png'
+      image: '/image.png'
     },
   ];
 
@@ -92,7 +92,7 @@ function About() {
           </div>
           <div className="about-hero-right">
             <img 
-              src="../../public/hero2.jpg" 
+              src="/hero2.jpg" 
               alt="Students building a robotics competition robot" 
             />
           </div>
@@ -129,7 +129,7 @@ function About() {
           </div>
           <div className="mission-right">
             <img 
-              src="../../public/winning.jpg" 
+              src="/winning.jpg" 
               alt="Championship winning robotics team" 
             />
           </div>

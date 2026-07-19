@@ -44,11 +44,11 @@ function TeamProfile() {
   ];
 
   const galleryImages = [
-    '../../public/chall.jpg',
-    '../../public/chall.jpg',
-    '../../public/chall.jpg',
-    '../../public/chall.jpg',
-    '../../public/chall.jpg'
+    '/chall.jpg',
+    '/chall.jpg',
+    '/chall.jpg',
+    '/chall.jpg',
+    '/chall.jpg'
   ];
 
   return (
@@ -68,7 +68,7 @@ function TeamProfile() {
             <div className="team-name-wrapper">
               <div className="team-logo-large">
                 <img 
-                  src="../../public/fusebots.jpg" 
+                  src="/fusebots.jpg" 
                   alt="Fuse Bots Logo" 
                 />
               </div>
@@ -92,7 +92,7 @@ function TeamProfile() {
           </div>
           <div className="profile-hero-right">
             <img 
-              src="../../public/fusebots.jpg" 
+              src="/fusebots.jpg" 
               alt="Fuse Bots team working on robot" 
             />
             <div className="quick-facts">
@@ -242,15 +242,15 @@ function TeamProfile() {
           <div className="robot-left">
             <div className="robot-main-image">
               <img 
-                src="../../public/robot.jpg" 
+                src="/robot.jpg" 
                 alt="FUSE-X1 Robot on field" 
               />
             </div>
             <div className="robot-thumbnails">
-              <img src="../../public/robot2.jpg" alt="Robot view 1" />
-              <img src="../../public/robot3.jpeg" alt="Robot view 2" />
-              <img src="../../public/robot.jpg" alt="Robot view 3" />
-              <img src="../../public/robot.jpg" alt="Robot view 4" />
+              <img src="/robot2.jpg" alt="Robot view 1" />
+              <img src="/robot3.jpeg" alt="Robot view 2" />
+              <img src="/robot.jpg" alt="Robot view 3" />
+              <img src="/robot.jpg" alt="Robot view 4" />
             </div>
           </div>
           <div className="robot-center">
@@ -273,7 +273,7 @@ function TeamProfile() {
             <div className="project-card">
               <div className="project-image">
                 <img 
-                  src="../../public/chall.jpg" 
+                  src="/chall.jpg" 
                   alt="Smart Water Monitoring System" 
                 />
               </div>

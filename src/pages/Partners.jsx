@@ -87,7 +87,7 @@ function Partners() {
           </div>
           <div className="partners-hero-right">
             <img 
-              src="../../public/partners.jpg" 
+              src="/partners.jpg" 
               alt="Students collaborating on a robot" 
             />
           </div>

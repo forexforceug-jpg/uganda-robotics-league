@@ -8,28 +8,28 @@ function Programs() {
       title: 'Primary Robotics',
       description: 'Fun, hands-on activities introducing young learners to STEM and robotics through engaging projects.',
       ageRange: '7–12 years',
-      image: '../../public/primarystds.jpg',
+      image: '/primarystds.jpg',
       icon: '🎮'
     },
     {
       title: 'Lower Secondary Robotics',
       description: 'Build essential skills in design, programming, and teamwork through engaging challenges.',
       ageRange: '13–15 years',
-      image: '../../public/secondary.jpg',
+      image: '/secondary.jpg',
       icon: '⚙️'
     },
     {
       title: 'Advanced Secondary Robotics',
       description: 'Take on advanced engineering and competition challenges at the highest level.',
       ageRange: '16–18 years',
-      image: '../../public/highschool.jpg',
+      image: '/highschool.jpg',
       icon: '🏆'
     },
     {
       title: 'University & Open Innovation',
       description: 'Mentorship, research, and innovation opportunities for university students and young innovators.',
       ageRange: '18+ years',
-      image: '../../public/innovation.jpg',
+      image: '/innovation.jpg',
       icon: '🚀'
     }
   ];
@@ -108,7 +108,7 @@ function Programs() {
           </div>
           <div className="programs-hero-right">
             <img 
-              src="../../public/competition2.jpg" 
+              src="/competition2.jpg" 
               alt="Students working on a competition robot" 
             />
           </div>
@@ -185,7 +185,7 @@ function Programs() {
         <div className="equipment-container">
           <div className="equipment-image-left">
             <img 
-              src="../../public/robot.jpg" 
+              src="/robot.jpg" 
               alt="Competition robot on arena field" 
             />
           </div>
@@ -202,7 +202,7 @@ function Programs() {
           </div>
           <div className="equipment-image-center">
             <img 
-              src="../../public/robot2.jpg" 
+              src="/robot2.jpg" 
               alt="Students assembling a robot" 
             />
           </div>

@@ -75,11 +75,11 @@ function ProgramDetails() {
   ];
 
   const galleryImages = [
-    '../../public/team1.jpg',
-    '../../public/team1.jpg',
-    '../../public/team1.jpg',
-    '../../public/team1.jpg',
-    '../../public/team1.jpg'
+    '/team1.jpg',
+    '/team1.jpg',
+    '/team1.jpg',
+    '/team1.jpg',
+    '/team1.jpg'
   ];
 
   return (
@@ -122,7 +122,7 @@ function ProgramDetails() {
           </div>
           <div className="program-hero-right">
             <img 
-              src="../../public/primary2.jpg" 
+              src="/primary2.jpg" 
               alt="Lower Secondary students building a robot" 
             />
             <div className="program-info-card">
@@ -177,7 +177,7 @@ function ProgramDetails() {
          <div className="overview-center">
   <div className="video-preview">
     <img 
-      src="../../public/video2.mp4" 
+      src="/video2.mp4" 
       alt="Program video preview" 
     />
     <div className="video-play-overlay">

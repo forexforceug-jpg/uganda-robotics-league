@@ -64,7 +64,7 @@ function RegisterTeam() {
           </div>
           <div className="register-hero-right">
             <img 
-              src="../../public/contactus.jpg" 
+              src="/contactus.jpg" 
               alt="Students building a robot" 
             />
           </div>

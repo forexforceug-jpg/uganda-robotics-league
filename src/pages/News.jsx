@@ -7,7 +7,7 @@ function News() {
     title: 'J-Robotics Crowned URL 2025 Champions!',
     date: '12 May 2026',
     summary: 'J-Robotics from Jinja Secondary School emerged victorious after an intense final match at the National Championship.',
-    image: '../../public/news5.jpg',
+    image: '/news5.jpg',
     category: 'Featured'
   };
 
@@ -16,19 +16,19 @@ function News() {
       title: 'Building More Than Robots: Student Impact Stories',
       date: '5 May 2026',
       summary: 'How robotics transforms confidence, teamwork, and leadership in Ugandan schools.',
-      image: '../../public/news6.jpg'
+      image: '/news6.jpg'
     },
     {
       title: 'Coaches Training Workshop Held in Jinja',
       date: '28 April 2026',
       summary: 'Educators from 25 schools received robotics coaching and mentorship training.',
-      image: '../../public/news7.jpg'
+      image: '/news7.jpg'
     },
     {
       title: 'Regional Qualifiers Begin Across Uganda',
       date: '20 April 2026',
       summary: 'Teams from multiple regions compete for qualification to the National Championship.',
-      image: '../../public/news8.jpg'
+      image: '/news8.jpg'
     }
   ];
 
@@ -37,19 +37,19 @@ function News() {
       title: 'Innovation Challenge Winners Announced',
       date: '15 May 2026',
       summary: 'Teams impressed judges with outstanding creativity and engineering solutions.',
-      image: '../../public/news4.jpg'
+      image: '/news4.jpg'
     },
     {
       title: 'New Robotics Labs Launch in Three Schools',
       date: '10 May 2026',
       summary: 'Partnerships with local organizations help expand robotics education across Uganda.',
-      image: '../../public/news4.jpg'
+      image: '/news4.jpg'
     },
     {
       title: 'Python Programming Bootcamp for Students',
       date: '5 May 2026',
       summary: 'Practical hands-on training opportunity for aspiring robotics programmers.',
-      image: '../../public/news4.jpg'
+      image: '/news4.jpg'
     }
   ];
 
@@ -83,7 +83,7 @@ function News() {
           </div>
           <div className="news-hero-right">
             <img 
-              src="../../public/news4.jpg" 
+              src="/news4.jpg" 
               alt="Students testing a competition robot" 
             />
           </div>

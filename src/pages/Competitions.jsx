@@ -9,7 +9,7 @@ function Competitions() {
       title: 'Registration Deadline',
       date: 'March 31, 2026',
       location: 'Online',
-      image: '../../public/registration.jpg',
+      image: '/registration.jpg',
       month: 'MAR',
       day: '31'
     },
@@ -17,7 +17,7 @@ function Competitions() {
       title: 'Coach Training Workshop',
       date: 'April 15, 2026',
       location: 'Jinja, Uganda',
-      image: '../../public/training.jpg',
+      image: '/training.jpg',
       month: 'APR',
       day: '15'
     },
@@ -25,7 +25,7 @@ function Competitions() {
       title: 'Regional Qualifiers',
       date: 'May 10-25, 2026',
       location: 'Various Regions',
-      image: '../../public/regional.jpg',
+      image: '/regional.jpg',
       month: 'MAY',
       day: '10-25'
     },
@@ -33,7 +33,7 @@ function Competitions() {
       title: 'National Championship',
       date: 'July 18-20, 2026',
       location: 'Jinja, Uganda',
-      image: '../../public/nationals.jpg',
+      image: '/nationals.jpg',
       month: 'JUL',
       day: '18-20'
     },
@@ -41,7 +41,7 @@ function Competitions() {
       title: 'Awards & Closing Ceremony',
       date: 'July 20, 2026',
       location: 'Jinja, Uganda',
-      image: '../../public/awards.jpg',
+      image: '/awards.jpg',
       month: 'JUL',
       day: '20'
     }
@@ -51,37 +51,37 @@ function Competitions() {
     {
       title: 'Vex Game',
       description: 'Strategic gameplay involving alliance scoring and challenge completion.',
-      image: '../../public/vex.jpg',
+      image: '/vex.jpg',
       icon: '🤖'
     },
     {
       title: 'Line Follower',
       description: 'Speed and precision while navigating predefined lines.',
-      image: '../../public/linefollower.jpg',
+      image: '/linefollower.jpg',
       icon: '📏'
     },
     {
       title: 'Robot Combat',
       description: 'Head-to-head engineering battles testing robot durability and performance.',
-      image: '../../public/vex2.jpg',
+      image: '/vex2.jpg',
       icon: '⚔️'
     },
     {
       title: 'Maze Solver',
       description: 'Autonomous robots navigate complex mazes using intelligent programming.',
-      image: '../../public/maze.jpg',
+      image: '/maze.jpg',
       icon: '🌀'
     },
     {
       title: 'Innovation Challenge',
       description: 'Solve real-world problems through creative robotic solutions.',
-      image: '../../public/challenge.jpg',
+      image: '/challenge.jpg',
       icon: '💡'
     },
     {
       title: 'Ballon Popper',
       description: 'Design and launch ballon poppers in exciting engineering competitions.',
-      image: '../../public/popper.jpg',
+      image: '/popper.jpg',
       icon: '🚀'
     }
   ];
@@ -91,19 +91,19 @@ function Competitions() {
       date: 'July 20, 2026',
       title: 'J-Robotics Crowned URL 2025 Champions!',
       description: 'Team J-Robotics from Kampala takes the top prize after an exciting national championship finale.',
-      image: '../../public/competition3.jpg'
+      image: '/competition3.jpg'
     },
     {
       date: 'July 15, 2026',
       title: 'Building More Than Robots: Student Impact Stories',
       description: 'How robotics builds confidence, teamwork, and leadership in Ugandan schools.',
-      image: '../../public/news1.jpg'
+      image: '/news1.jpg'
     },
     {
       date: 'July 10, 2026',
       title: 'Coaches Training Workshop Held in Jinja',
       description: 'Educators from multiple schools received robotics coaching and mentorship training.',
-      image: '../../public/training.jpg'
+      image: '/training.jpg'
     }
   ];
 
@@ -140,7 +140,7 @@ function Competitions() {
           </div>
           <div className="competitions-hero-right">
             <img 
-              src="../../public/competition3.jpg" 
+              src="/competition3.jpg" 
               alt="Students operating a competition robot in an arena" 
             />
           </div>
