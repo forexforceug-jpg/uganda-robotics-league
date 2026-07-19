@@ -60,6 +60,32 @@ function About() {
     { icon: MdShield, title: 'Integrity', desc: 'Honesty, accountability, and ethical leadership.' },
     { icon: FaGlobe, title: 'Inclusion', desc: 'Equal opportunities and accessibility for everyone.' }
   ];
+  const faqs = [
+  {
+    question: 'How can I register my team for the URL season?',
+    answer: 'Team registration can be completed online through the "Register a Team" button on our navigation bar. You will need to provide your school name, team name, coach information, and contact details. Registration is open from 1st May to 30th September 2026.'
+  },
+  {
+    question: 'What are the eligibility requirements for teams?',
+    answer: 'Teams must consist of students enrolled in Ugandan secondary schools. Each team should have 2-5 members and at least one adult coach or mentor. Students from S1 to S6 are eligible to participate.'
+  },
+  {
+    question: 'Where can I find the competition rules and game manual?',
+    answer: 'The official competition rules and game manual can be found in the Resources section under "Competition Resources" or directly from the Competitions page. You can also download the PDF version from our website.'
+  },
+  {
+    question: 'How can my school or organization become a partner?',
+    answer: 'Organizations interested in partnering with us can visit our Partners page and click the "Become a Partner" button, or contact our partnerships team directly via email at partnerships@ugandaroboticsleague.org.'
+  },
+  {
+    question: 'Do you offer robotics training or workshops?',
+    answer: 'Yes! We offer regular training workshops, coaching sessions, and bootcamps for students and educators throughout the year. Check our Programs and Resources pages for upcoming opportunities and schedules.'
+  },
+  {
+    question: 'How can I volunteer with the Uganda Robotics League?',
+    answer: 'We welcome volunteers for events, workshops, and mentorship programs. Visit our Get Involved section or contact our volunteer coordinator at volunteer@ugandaroboticsleague.org for current opportunities.'
+  }
+];
 
   const timeline = [
     { year: '2018', desc: 'Uganda Robotics League founded with a vision to promote robotics education in Uganda.' },

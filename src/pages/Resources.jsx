@@ -1,9 +1,15 @@
-import { FaSearch, FaBook, FaUsers, FaTools, FaCode, FaTrophy, FaShieldAlt, FaPlay, FaFilePdf, FaDownload, FaVideo, FaPlus, FaHeadset, FaUserPlus } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaSearch, FaBook, FaUsers, FaTools, FaCode, FaTrophy, FaShieldAlt, FaPlay, FaFilePdf, FaDownload, FaVideo, FaPlus, FaMinus, FaHeadset, FaUserPlus } from 'react-icons/fa';
 import { MdPeople, MdDescription } from 'react-icons/md';
 import { PiGraduationCap } from 'react-icons/pi';
 import './Resources.css';
 
 function Resources() {
+    const [activeFaq, setActiveFaq] = useState(0);
+
+  const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  }
   const categories = [
     {
       icon: FaBook,
@@ -114,23 +120,23 @@ function Resources() {
   const faqs = [
     {
       question: 'Where can I download the current game manual?',
-      answer: 'You can download the latest game manual from the Competitions > Current Season page or directly from the Competition Resources section.'
+      answer: 'You can download the latest game manual from the Competitions > Current Season page or directly from the Competition Resources section. The manual is available in PDF format and includes all rules, field specifications, and scoring details for the current season.'
     },
     {
       question: 'How do I register a team for the competition?',
-      answer: 'Team registration can be completed online through the "Register a Team" button on the navigation bar. You will need to provide your school name, team name, and contact information.'
+      answer: 'Team registration can be completed online through the "Register a Team" button on the navigation bar. You will need to provide your school name, team name, coach information, and contact details. Registration is open from 1st May to 30th September 2026.'
     },
     {
       question: 'What are the robot size and weight limitations?',
-      answer: 'The robot must fit within a 18" x 18" x 18" (45.7 cm x 45.7 cm x 45.7 cm) cube at the start of each match and weigh no more than 15 lbs (6.8 kg).'
+      answer: 'The robot must fit within a 18" x 18" x 18" (45.7 cm x 45.7 cm x 45.7 cm) cube at the start of each match and weigh no more than 15 lbs (6.8 kg). These specifications are subject to change each season, so always check the current game manual.'
     },
     {
       question: 'Can beginners participate in the league?',
-      answer: 'Absolutely! The Uganda Robotics League welcomes students of all skill levels. We have programs and resources designed for beginners through advanced participants.'
+      answer: 'Absolutely! The Uganda Robotics League welcomes students of all skill levels. We have programs and resources designed for beginners through advanced participants. Our training materials and mentorship programs help new teams get started.'
     },
     {
       question: 'Where can I get additional support if needed?',
-      answer: 'Our support team is available to help. You can contact us through the Contact page, email us at support@ugandaroboticsleague.org, or reach out to your regional coordinator.'
+      answer: 'Our support team is available to help. You can contact us through the Contact page, email us at support@ugandaroboticsleague.org, or reach out to your regional coordinator. We also have a comprehensive FAQ section and resource library available.'
     }
   ];
 
@@ -247,7 +253,7 @@ function Resources() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+           {/* FAQ Section */}
       <section className="faq-section">
         <div className="section-header">
           <h2>FREQUENTLY ASKED QUESTIONS</h2>
@@ -255,12 +261,20 @@ function Resources() {
         </div>
         <div className="faq-container">
           {faqs.map((faq, index) => (
-            <div key={index} className={`faq-item ${index === 0 ? 'active' : ''}`}>
-              <div className="faq-question">
+            <div 
+              key={index} 
+              className={`faq-item ${activeFaq === index ? 'active' : ''}`}
+            >
+              <div 
+                className="faq-question"
+                onClick={() => toggleFaq(index)}
+              >
                 <span>{faq.question}</span>
-                <FaPlus className="faq-toggle" />
+                <div className="faq-toggle">
+                  {activeFaq === index ? <FaMinus /> : <FaPlus />}
+                </div>
               </div>
-              {index === 0 && (
+              {activeFaq === index && (
                 <div className="faq-answer">
                   <p>{faq.answer}</p>
                 </div>

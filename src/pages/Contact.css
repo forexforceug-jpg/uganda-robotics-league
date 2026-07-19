@@ -331,7 +331,7 @@
 /* FAQ Section */
 .faq-section {
   padding: 5rem 2rem;
-  background: white;
+  background: #f8f9fa;
 }
 
 .faq-grid {
@@ -344,16 +344,22 @@
 
 .faq-item {
   background: white;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   cursor: pointer;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
+  height: fit-content;
 }
 
 .faq-item:hover {
   border-color: #ff0000;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.faq-item.active {
+  border-color: #ff0000;
+  box-shadow: 0 4px 25px rgba(255, 0, 0, 0.08);
 }
 
 .faq-question {
@@ -363,12 +369,56 @@
   font-weight: 700;
   font-size: 1rem;
   color: #000;
+  gap: 1rem;
+}
+
+.faq-item.active .faq-question {
+  color: #ff0000;
 }
 
 .faq-toggle {
   font-size: 1.5rem;
   color: #ff0000;
   font-weight: 300;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.05);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(180deg);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.faq-answer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  animation: slideDown 0.3s ease;
+}
+
+.faq-answer p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .faq-actions {
@@ -396,6 +446,40 @@
   color: white;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-item {
+    padding: 1rem;
+  }
+  
+  .faq-question {
+    font-size: 0.9rem;
+  }
+  
+  .faq-toggle {
+    font-size: 1.2rem;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 3rem 1rem;
+  }
+  
+  .faq-item {
+    padding: 0.75rem;
+  }
+  
+  .faq-question {
+    font-size: 0.85rem;
+  }
+}
 /* CTA Banner */
 .contact-cta {
   background: linear-gradient(135deg, #ff0000, #cc0000);

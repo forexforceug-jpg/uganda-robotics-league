@@ -1,8 +1,13 @@
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaShareAlt, FaClock, FaPaperPlane, FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaLinkedin, FaArrowRight, FaUserPlus } from 'react-icons/fa';
-import { MdPeople } from 'react-icons/md';
+import { useState } from 'react';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaShareAlt, FaClock, FaPaperPlane, FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaLinkedin, FaArrowRight, FaUserPlus, FaMinus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 
 function Contact() {
+  const [activeIndex, setActiveIndex] = useState(null);
+    const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   const contactInfo = [
     {
       icon: FaMapMarkerAlt,
@@ -43,27 +48,27 @@ function Contact() {
   const faqs = [
     {
       question: 'How can I register my team for the URL season?',
-      answer: 'Team registration can be completed online through the "Register a Team" button on our navigation bar. You will need to provide your school name, team name, coach information, and contact details.'
+      answer: 'Team registration can be completed online through the "Register a Team" button on our navigation bar. You will need to provide your school name, team name, coach information, and contact details. Registration is open from 1st May to 30th September 2026.'
     },
     {
       question: 'What are the eligibility requirements for teams?',
-      answer: 'Teams must consist of students enrolled in Ugandan secondary schools. Each team should have 2-5 members and at least one adult coach or mentor.'
+      answer: 'Teams must consist of students enrolled in Ugandan secondary schools. Each team should have 2-5 members and at least one adult coach or mentor. Students from S1 to S6 are eligible to participate.'
     },
     {
       question: 'Where can I find the competition rules and game manual?',
-      answer: 'The official competition rules and game manual can be found in the Resources section under "Competition Resources" or directly from the Competitions page.'
+      answer: 'The official competition rules and game manual can be found in the Resources section under "Competition Resources" or directly from the Competitions page. You can also download the PDF version from our website.'
     },
     {
       question: 'How can my school or organization become a partner?',
-      answer: 'Organizations interested in partnering with us can visit our Partners page and click the "Become a Partner" button, or contact our partnerships team directly via email.'
+      answer: 'Organizations interested in partnering with us can visit our Partners page and click the "Become a Partner" button, or contact our partnerships team directly via email at partnerships@ugandaroboticsleague.org.'
     },
     {
       question: 'Do you offer robotics training or workshops?',
-      answer: 'Yes! We offer regular training workshops, coaching sessions, and bootcamps for students and educators. Check our Programs and Resources pages for upcoming opportunities.'
+      answer: 'Yes! We offer regular training workshops, coaching sessions, and bootcamps for students and educators throughout the year. Check our Programs and Resources pages for upcoming opportunities and schedules.'
     },
     {
       question: 'How can I volunteer with the Uganda Robotics League?',
-      answer: 'We welcome volunteers for events, workshops, and mentorship. Visit our Get Involved section or contact our volunteer coordinator for current opportunities.'
+      answer: 'We welcome volunteers for events, workshops, and mentorship programs. Visit our Get Involved section or contact our volunteer coordinator at volunteer@ugandaroboticsleague.org for current opportunities.'
     }
   ];
 
@@ -192,7 +197,7 @@ function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+         {/* FAQ Section */}
       <section className="faq-section">
         <div className="section-header">
           <h2>FREQUENTLY ASKED QUESTIONS</h2>
@@ -200,11 +205,22 @@ function Contact() {
         </div>
         <div className="faq-grid">
           {faqs.map((faq, index) => (
-            <div key={index} className="faq-item">
+            <div 
+              key={index} 
+              className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+              onClick={() => toggleFaq(index)}
+            >
               <div className="faq-question">
                 <span>{faq.question}</span>
-                <div className="faq-toggle">+</div>
+                <div className="faq-toggle">
+                  {activeIndex === index ? <FaMinus /> : '+'}
+                </div>
               </div>
+              {activeIndex === index && (
+                <div className="faq-answer">
+                  <p>{faq.answer}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
