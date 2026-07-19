@@ -1,6 +1,7 @@
 import { FaCalendarAlt, FaMapMarkerAlt, FaTrophy, FaUsers, FaUserGraduate, FaStar, FaArrowRight, FaPlay, FaChevronLeft, FaChevronRight, FaDownload, FaUserPlus } from 'react-icons/fa';
 import { MdPeople, MdEvent, MdCategory } from 'react-icons/md';
 import { PiGraduationCap } from 'react-icons/pi';
+import StatsCounter from '../components/StatsCounter';
 import './Competitions.css';
 
 function Competitions() {
@@ -150,36 +151,36 @@ function Competitions() {
       {/* Statistics Panel */}
       <div className="competitions-stats">
         <div className="stats-container">
-          <div className="stat-item">
-            <FaTrophy className="stat-icon" />
-            <div className="stat-number">6</div>
-            <div className="stat-label">Seasons</div>
-          </div>
-          <div className="stat-item">
-            <MdEvent className="stat-icon" />
-            <div className="stat-number">100+</div>
-            <div className="stat-label">Robotics Activities</div>
-          </div>
-          <div className="stat-item">
-            <MdCategory className="stat-icon" />
-            <div className="stat-number">50+</div>
-            <div className="stat-label">Major Events</div>
-          </div>
-          <div className="stat-item">
-            <FaStar className="stat-icon" />
-            <div className="stat-number">15+</div>
-            <div className="stat-label">Challenge Categories</div>
-          </div>
-          <div className="stat-item">
-            <PiGraduationCap className="stat-icon" />
-            <div className="stat-number">10,000+</div>
-            <div className="stat-label">Students Inspired</div>
-          </div>
-          <div className="stat-item">
-            <MdPeople className="stat-icon" />
-            <div className="stat-number">500+</div>
-            <div className="stat-label">Mentors & Volunteers</div>
-          </div>
+          <StatsCounter 
+            icon={FaTrophy} 
+            endValue="8" 
+            label="Seasons" 
+          />
+          <StatsCounter 
+            icon={MdEvent} 
+            endValue="17+" 
+            label="Robotics Activities" 
+          />
+          <StatsCounter 
+            icon={MdCategory} 
+            endValue="20+" 
+            label="Major Events" 
+          />
+          <StatsCounter 
+            icon={FaStar} 
+            endValue="15+" 
+            label="Challenge Categories" 
+          />
+          <StatsCounter 
+            icon={PiGraduationCap} 
+            endValue="200+" 
+            label="Students Inspired" 
+          />
+          <StatsCounter 
+            icon={MdPeople} 
+            endValue="50+" 
+            label="Mentors & Volunteers" 
+          />
         </div>
       </div>
 

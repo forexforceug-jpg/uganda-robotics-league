@@ -1,5 +1,6 @@
 import { FaUsers, FaUserGraduate, FaMapMarkerAlt, FaTrophy, FaArrowRight, FaUserPlus, FaBookOpen, FaTools, FaBullseye, FaStar } from 'react-icons/fa';
 import { MdPeople } from 'react-icons/md';
+import StatsCounter from '../components/StatsCounter';
 import './Home.css';
 
 function Home() {
@@ -101,34 +102,34 @@ function Home() {
   </div>
 </section>
 
-      {/* Statistics Panel */}
+           {/* Statistics Panel */}
       <div className="stats-panel">
         <div className="stats-container">
-          <div className="stat-item">
-            <MdPeople className="stat-icon" />
-            <div className="stat-number">150+</div>
-            <div className="stat-label">Schools</div>
-          </div>
-          <div className="stat-item">
-            <FaUsers className="stat-icon" />
-            <div className="stat-number">350+</div>
-            <div className="stat-label">Teams</div>
-          </div>
-          <div className="stat-item">
-            <FaUserGraduate className="stat-icon" />
-            <div className="stat-number">5,000+</div>
-            <div className="stat-label">Students</div>
-          </div>
-          <div className="stat-item">
-            <FaMapMarkerAlt className="stat-icon" />
-            <div className="stat-number">20+</div>
-            <div className="stat-label">Districts</div>
-          </div>
-          <div className="stat-item">
-            <FaTrophy className="stat-icon" />
-            <div className="stat-number">6</div>
-            <div className="stat-label">Seasons</div>
-          </div>
+          <StatsCounter 
+            icon={MdPeople} 
+            endValue="50+" 
+            label="Schools" 
+          />
+          <StatsCounter 
+            icon={FaUsers} 
+            endValue="30+" 
+            label="Teams" 
+          />
+          <StatsCounter 
+            icon={FaUserGraduate} 
+            endValue="250+" 
+            label="Students" 
+          />
+          <StatsCounter 
+            icon={FaMapMarkerAlt} 
+            endValue="10+" 
+            label="Districts" 
+          />
+          <StatsCounter 
+            icon={FaTrophy} 
+            endValue="8" 
+            label="Seasons" 
+          />
         </div>
       </div>
 
