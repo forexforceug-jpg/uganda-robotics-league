@@ -1,6 +1,7 @@
 import { FaGlobe, FaBook, FaUsers, FaTrophy, FaFlag, FaStar, FaHeart, FaLightbulb, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { MdPeople, MdShield } from 'react-icons/md';
 import { PiGraduationCap } from 'react-icons/pi';
+import StatsCounter from '../components/StatsCounter';
 import './About.css';
 
 function About() {
@@ -182,7 +183,7 @@ function About() {
         </div>
       </section>
 
-      {/* Impact Banner */}
+        {/* Impact Banner */}
       <section className="impact-banner">
         <div className="impact-content">
           <div className="impact-left">
@@ -194,31 +195,31 @@ function About() {
             </p>
           </div>
           <div className="impact-stats">
-            <div className="impact-stat">
-              <FaTrophy className="impact-icon" />
-              <div className="impact-number">6</div>
-              <div className="impact-label-text">Seasons</div>
-            </div>
-            <div className="impact-stat">
-              <FaUsers className="impact-icon" />
-              <div className="impact-number">500+</div>
-              <div className="impact-label-text">Teams</div>
-            </div>
-            <div className="impact-stat">
-              <PiGraduationCap className="impact-icon" />
-              <div className="impact-number">10,000+</div>
-              <div className="impact-label-text">Students Impacted</div>
-            </div>
-            <div className="impact-stat">
-              <FaFlag className="impact-icon" />
-              <div className="impact-number">50+</div>
-              <div className="impact-label-text">Districts Reached</div>
-            </div>
-            <div className="impact-stat">
-              <FaStar className="impact-icon" />
-              <div className="impact-number">100+</div>
-              <div className="impact-label-text">Partners & Supporters</div>
-            </div>
+            <StatsCounter 
+              icon={FaTrophy} 
+              endValue="7" 
+              label="Seasons" 
+            />
+            <StatsCounter 
+              icon={FaUsers} 
+              endValue="50+" 
+              label="Teams" 
+            />
+            <StatsCounter 
+              icon={PiGraduationCap} 
+              endValue="200+" 
+              label="Students Impacted" 
+            />
+            <StatsCounter 
+              icon={FaFlag} 
+              endValue="20+" 
+              label="Districts Reached" 
+            />
+            <StatsCounter 
+              icon={FaStar} 
+              endValue="22+" 
+              label="Partners & Supporters" 
+            />
           </div>
         </div>
       </section>
