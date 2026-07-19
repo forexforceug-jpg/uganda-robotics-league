@@ -23,12 +23,12 @@ function Navbar() {
         <div className="nav-container">
           <Link to="/" className="nav-logo">
             <div className="logo-wrapper">
-              <div className="logo-icon">
-                <span className="logo-url">URL</span>
-                <div className="logo-emblem">
-                </div>
-              </div>
-              <span className="logo-sub">Uganda Robotics League</span>
+              <img 
+                src="../../public/logourl.png" 
+                alt="Uganda Robotics League Logo" 
+                className="logo-image"
+              />
+              <span className="logo-sub">URL</span>
             </div>
           </Link>
 
@@ -62,14 +62,14 @@ function Navbar() {
             </li>
           </ul>
 
-         <div className="nav-actions">
-  <button className="btn-signin">
-    <FaUser /> Sign In
-  </button>
-  <Link to="/register" className="btn-register-team">
-    Register a Team
-  </Link>
-</div>
+          <div className="nav-actions">
+            <button className="btn-signin">
+              <FaUser /> Sign In
+            </button>
+            <Link to="/register" className="btn-register-team">
+              Register a Team
+            </Link>
+          </div>
         </div>
       </nav>
     </>

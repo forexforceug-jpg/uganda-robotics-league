@@ -6,58 +6,46 @@ import './About.css';
 function About() {
   const founders = [
     {
-      name: 'Steven Mugisha',
-      role: 'Co-Founder & Executive Director',
-      bio: 'Robotics educator and innovation advocate passionate about STEM education and youth empowerment in Uganda.',
-      image: 'https://via.placeholder.com/200x200/1a3a5c/ffffff?text=Steven'
-    },
-    {
-      name: 'Sarah Nambusi',
-      role: 'Co-Founder & Programs Lead',
+      name: 'Mischell Massaro',
+      role: 'Founder',
       bio: 'Engineer and strategist focused on creating impactful learning experiences and building strong robotics programs.',
-      image: 'https://via.placeholder.com/200x200/2d6a9f/ffffff?text=Sarah'
+      image: '../../public/image.png'
     },
-    {
-      name: 'Brian Kasozi',
-      role: 'Co-Founder & Operations Lead',
-      bio: 'Operations professional and technology enthusiast dedicated to building sustainable systems and partnerships.',
-      image: 'https://via.placeholder.com/200x200/1a3a5c/ffffff?text=Brian'
-    }
   ];
 
   const mentors = [
     {
-      name: 'Dr. Grace Auma',
+      name: 'Ssemanda Godwin',
       role: 'Robotics & AI Specialist',
       bio: 'Expert in artificial intelligence and robotics with 10+ years of experience.',
       image: 'https://via.placeholder.com/150x150/ff0000/ffffff?text=Grace'
     },
     {
-      name: 'Eng. Peter Okello',
+      name: 'Katalo Abu Baker',
       role: 'Mechatronics Engineer',
       bio: 'Specializes in robotics design and mechanical systems integration.',
       image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Peter'
     },
     {
-      name: 'Dr. Janet Kirabo',
+      name: 'Mpala Ronald',
       role: 'STEM Education Specialist',
       bio: 'Curriculum developer focused on making robotics accessible to all students.',
       image: 'https://via.placeholder.com/150x150/2d6a9f/ffffff?text=Janet'
     },
     {
-      name: 'Robert Ssali',
+      name: 'Avi',
       role: 'Software Architect',
       bio: 'Leads software development for robotics control systems and applications.',
       image: 'https://via.placeholder.com/150x150/ff0000/ffffff?text=Robert'
     },
     {
-      name: 'Alice Nankya',
+      name: 'Iddi',
       role: 'Innovation Coach',
       bio: 'Mentors students in design thinking and creative problem solving.',
       image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Alice'
     },
     {
-      name: 'David Muwonge',
+      name: 'Madam Teo',
       role: 'Entrepreneurship Lead',
       bio: 'Guides students in turning robotics innovations into sustainable ventures.',
       image: 'https://via.placeholder.com/150x150/2d6a9f/ffffff?text=David'
@@ -104,7 +92,7 @@ function About() {
           </div>
           <div className="about-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Building+Robot" 
+              src="../../public/hero2.jpg" 
               alt="Students building a robotics competition robot" 
             />
           </div>
@@ -141,7 +129,7 @@ function About() {
           </div>
           <div className="mission-right">
             <img 
-              src="https://via.placeholder.com/500x400/ffd700/000000?text=Championship+Team" 
+              src="../../public/winning.jpg" 
               alt="Championship winning robotics team" 
             />
           </div>

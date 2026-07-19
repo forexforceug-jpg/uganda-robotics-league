@@ -46,7 +46,7 @@
 /* Main Navigation */
 .navbar {
   background: white;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -64,6 +64,7 @@
   width: 100%;
 }
 
+/* Logo Styles - Using Image */
 .nav-logo {
   text-decoration: none;
   display: flex;
@@ -72,54 +73,44 @@
 
 .logo-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 0.75rem;
 }
 
-.logo-icon {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-}
-
-.logo-url {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #000;
-  letter-spacing: -1px;
-}
-
-.logo-emblem {
-  display: flex;
-  gap: 2px;
-  align-items: center;
-}
-
-.emblem-red {
-  width: 12px;
-  height: 12px;
-  background: #ff0000;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.emblem-white {
-  width: 12px;
-  height: 12px;
-  background: #000;
-  border-radius: 50%;
-  display: inline-block;
-  border: 2px solid #ff0000;
+.logo-image {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .logo-sub {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #666;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Alternative: If you want text below the logo */
+.logo-wrapper-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.logo-image-stacked {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.logo-sub-stacked {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #333;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: -2px;
 }
 
 .nav-menu {
@@ -207,6 +198,8 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-register-team:hover {
@@ -222,6 +215,14 @@
   
   .nav-menu a {
     font-size: 0.85rem;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .logo-sub {
+    font-size: 0.65rem;
   }
 }
 
@@ -255,8 +256,16 @@
     font-size: 0.8rem;
   }
   
-  .logo-url {
-    font-size: 1.5rem;
+  .logo-image {
+    height: 35px;
+  }
+  
+  .logo-sub {
+    font-size: 0.6rem;
+  }
+  
+  .logo-wrapper {
+    gap: 0.5rem;
   }
 }
 
@@ -276,5 +285,14 @@
   
   .nav-actions {
     gap: 0.3rem;
+  }
+  
+  .logo-image {
+    height: 30px;
+  }
+  
+  .logo-sub {
+    font-size: 1rem;
+    letter-spacing: 4px;
   }
 }
