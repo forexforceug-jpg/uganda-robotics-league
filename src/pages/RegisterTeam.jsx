@@ -64,7 +64,7 @@ function RegisterTeam() {
           </div>
           <div className="register-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Building+Robot" 
+              src="../../public/contactus.jpg" 
               alt="Students building a robot" 
             />
           </div>

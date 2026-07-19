@@ -7,7 +7,7 @@ function News() {
     title: 'J-Robotics Crowned URL 2025 Champions!',
     date: '12 May 2026',
     summary: 'J-Robotics from Jinja Secondary School emerged victorious after an intense final match at the National Championship.',
-    image: 'https://via.placeholder.com/800x450/ffd700/000000?text=Champions+2025',
+    image: '../../public/news5.jpg',
     category: 'Featured'
   };
 
@@ -16,19 +16,19 @@ function News() {
       title: 'Building More Than Robots: Student Impact Stories',
       date: '5 May 2026',
       summary: 'How robotics transforms confidence, teamwork, and leadership in Ugandan schools.',
-      image: 'https://via.placeholder.com/120x120/1a3a5c/ffffff?text=Student+Impact'
+      image: '../../public/news6.jpg'
     },
     {
       title: 'Coaches Training Workshop Held in Jinja',
       date: '28 April 2026',
       summary: 'Educators from 25 schools received robotics coaching and mentorship training.',
-      image: 'https://via.placeholder.com/120x120/2d6a9f/ffffff?text=Coaches+Workshop'
+      image: '../../public/news7.jpg'
     },
     {
       title: 'Regional Qualifiers Begin Across Uganda',
       date: '20 April 2026',
       summary: 'Teams from multiple regions compete for qualification to the National Championship.',
-      image: 'https://via.placeholder.com/120x120/ff0000/ffffff?text=Regional+Qualifiers'
+      image: '../../public/news8.jpg'
     }
   ];
 
@@ -37,19 +37,19 @@ function News() {
       title: 'Innovation Challenge Winners Announced',
       date: '15 May 2026',
       summary: 'Teams impressed judges with outstanding creativity and engineering solutions.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Innovation+Challenge'
+      image: '../../public/news4.jpg'
     },
     {
       title: 'New Robotics Labs Launch in Three Schools',
       date: '10 May 2026',
       summary: 'Partnerships with local organizations help expand robotics education across Uganda.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=New+Robotics+Labs'
+      image: '../../public/news4.jpg'
     },
     {
       title: 'Python Programming Bootcamp for Students',
       date: '5 May 2026',
       summary: 'Practical hands-on training opportunity for aspiring robotics programmers.',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Python+Bootcamp'
+      image: '../../public/news4.jpg'
     }
   ];
 
@@ -83,7 +83,7 @@ function News() {
           </div>
           <div className="news-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Testing+Robot" 
+              src="../../public/news4.jpg" 
               alt="Students testing a competition robot" 
             />
           </div>

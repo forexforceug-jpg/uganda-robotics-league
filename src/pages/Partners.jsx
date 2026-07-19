@@ -87,7 +87,7 @@ function Partners() {
           </div>
           <div className="partners-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Collaborating" 
+              src="../../public/partners.jpg" 
               alt="Students collaborating on a robot" 
             />
           </div>

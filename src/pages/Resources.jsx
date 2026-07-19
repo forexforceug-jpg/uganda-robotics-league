@@ -59,7 +59,7 @@ function Resources() {
     {
       title: 'URL 2026 Game Manual',
       description: 'The official manual for the 2026 competition season.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=URL+2026+Game+Manual',
+      image: '../../public/manual.png',
       category: 'Competition Resources',
       format: 'PDF',
       size: '4.2 MB'
@@ -67,7 +67,7 @@ function Resources() {
     {
       title: 'Starter Robot Build Guide',
       description: 'A step-by-step guide for building a competition-ready robot.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Starter+Robot+Build+Guide',
+      image: '../../public/instructions.jpg',
       category: 'Build Instructions',
       format: 'PDF',
       size: '3.8 MB'
@@ -75,7 +75,7 @@ function Resources() {
     {
       title: 'Python Basics for Robotics',
       description: 'Learn the fundamentals of Python programming for robotics beginners.',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Python+Basics+for+Robotics',
+      image: '../../public/python.jpg',
       category: 'Programming Guides',
       format: 'PDF',
       size: '5.1 MB'
@@ -83,7 +83,7 @@ function Resources() {
     {
       title: '2026 Field Setup Guide',
       description: 'Field dimensions, setup instructions, and game element details.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=2026+Field+Setup+Guide',
+      image: '../../public/field.png',
       category: 'Competition Resources',
       format: 'PDF',
       size: '6.3 MB'
@@ -94,19 +94,19 @@ function Resources() {
     {
       title: 'Understanding the 2026 Game',
       description: 'Learn the competition rules and scoring system.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Understanding+the+2026+Game',
+      image: '../../public/game.jpg',
       duration: '12:30'
     },
     {
       title: 'Building a Strong Robot Chassis',
       description: 'Robot construction techniques and mechanical reliability.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Building+a+Strong+Robot+Chassis',
+      image: '../../public/game.jpg',
       duration: '18:45'
     },
     {
       title: 'Programming Autonomous Modes',
       description: 'Learn how to program autonomous routines for your robot.',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Programming+Autonomous+Modes',
+      image: '../../public/auto.png',
       duration: '15:20'
     }
   ];
@@ -158,7 +158,7 @@ function Resources() {
           </div>
           <div className="resources-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Building+Robot+Lab" 
+              src="../../public/robot3.jpeg" 
               alt="Students working on a robot in a laboratory" 
             />
           </div>

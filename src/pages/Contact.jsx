@@ -87,7 +87,7 @@ function Contact() {
           </div>
           <div className="contact-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Collaborating+Robot" 
+              src="../../public/contactus.jpg" 
               alt="Students collaborating on a robot" 
             />
           </div>

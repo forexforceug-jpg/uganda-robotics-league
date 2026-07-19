@@ -44,11 +44,11 @@ function TeamProfile() {
   ];
 
   const galleryImages = [
-    'https://via.placeholder.com/250x200/1a3a5c/ffffff?text=Celebration',
-    'https://via.placeholder.com/250x200/2d6a9f/ffffff?text=Building',
-    'https://via.placeholder.com/250x200/ff0000/ffffff?text=Team+Photo',
-    'https://via.placeholder.com/250x200/1a3a5c/ffffff?text=Programming',
-    'https://via.placeholder.com/250x200/2d6a9f/ffffff?text=Competition'
+    '../../public/chall.jpg',
+    '../../public/chall.jpg',
+    '../../public/chall.jpg',
+    '../../public/chall.jpg',
+    '../../public/chall.jpg'
   ];
 
   return (
@@ -68,14 +68,14 @@ function TeamProfile() {
             <div className="team-name-wrapper">
               <div className="team-logo-large">
                 <img 
-                  src="https://via.placeholder.com/100x100/ffd700/000000?text=FB" 
+                  src="../../public/fusebots.jpg" 
                   alt="Fuse Bots Logo" 
                 />
               </div>
               <h1>Fuse Bots</h1>
             </div>
             <div className="team-details">
-              <span><MdSchool /> Makerere University College School</span>
+              <span><MdSchool /> Kiira College School</span>
               <span><FaMapMarkerAlt /> Kampala District</span>
               <span><MdCategory /> Advanced Secondary</span>
             </div>
@@ -92,7 +92,7 @@ function TeamProfile() {
           </div>
           <div className="profile-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Fuse+Bots+Team" 
+              src="../../public/fusebots.jpg" 
               alt="Fuse Bots team working on robot" 
             />
             <div className="quick-facts">
@@ -155,7 +155,7 @@ function TeamProfile() {
                 </div>
                 <div className="info-item">
                   <span className="info-label">School</span>
-                  <span className="info-value">Makerere University College School</span>
+                  <span className="info-value">Kiira College School</span>
                 </div>
                 <div className="info-item">
                   <span className="info-label">District</span>
@@ -242,15 +242,15 @@ function TeamProfile() {
           <div className="robot-left">
             <div className="robot-main-image">
               <img 
-                src="https://via.placeholder.com/500x350/1a3a5c/ffffff?text=FUSE-X1+Robot" 
+                src="../../public/robot.jpg" 
                 alt="FUSE-X1 Robot on field" 
               />
             </div>
             <div className="robot-thumbnails">
-              <img src="https://via.placeholder.com/100x80/1a3a5c/ffffff?text=View+1" alt="Robot view 1" />
-              <img src="https://via.placeholder.com/100x80/2d6a9f/ffffff?text=View+2" alt="Robot view 2" />
-              <img src="https://via.placeholder.com/100x80/ff0000/ffffff?text=View+3" alt="Robot view 3" />
-              <img src="https://via.placeholder.com/100x80/1a3a5c/ffffff?text=View+4" alt="Robot view 4" />
+              <img src="../../public/robot2.jpg" alt="Robot view 1" />
+              <img src="../../public/robot3.jpeg" alt="Robot view 2" />
+              <img src="../../public/robot.jpg" alt="Robot view 3" />
+              <img src="../../public/robot.jpg" alt="Robot view 4" />
             </div>
           </div>
           <div className="robot-center">
@@ -273,7 +273,7 @@ function TeamProfile() {
             <div className="project-card">
               <div className="project-image">
                 <img 
-                  src="https://via.placeholder.com/300x200/2d6a9f/ffffff?text=Water+Monitoring" 
+                  src="../../public/chall.jpg" 
                   alt="Smart Water Monitoring System" 
                 />
               </div>

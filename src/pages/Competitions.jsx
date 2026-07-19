@@ -9,7 +9,7 @@ function Competitions() {
       title: 'Registration Deadline',
       date: 'March 31, 2026',
       location: 'Online',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Registration+Deadline',
+      image: '../../public/registration.jpg',
       month: 'MAR',
       day: '31'
     },
@@ -17,7 +17,7 @@ function Competitions() {
       title: 'Coach Training Workshop',
       date: 'April 15, 2026',
       location: 'Jinja, Uganda',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Coach+Training',
+      image: '../../public/training.jpg',
       month: 'APR',
       day: '15'
     },
@@ -25,7 +25,7 @@ function Competitions() {
       title: 'Regional Qualifiers',
       date: 'May 10-25, 2026',
       location: 'Various Regions',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Regional+Qualifiers',
+      image: '../../public/regional.jpg',
       month: 'MAY',
       day: '10-25'
     },
@@ -33,7 +33,7 @@ function Competitions() {
       title: 'National Championship',
       date: 'July 18-20, 2026',
       location: 'Jinja, Uganda',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=National+Championship',
+      image: '../../public/nationals.jpg',
       month: 'JUL',
       day: '18-20'
     },
@@ -41,7 +41,7 @@ function Competitions() {
       title: 'Awards & Closing Ceremony',
       date: 'July 20, 2026',
       location: 'Jinja, Uganda',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Awards+Ceremony',
+      image: '../../public/awards.jpg',
       month: 'JUL',
       day: '20'
     }
@@ -49,39 +49,39 @@ function Competitions() {
 
   const categories = [
     {
-      title: 'Robot Game',
+      title: 'Vex Game',
       description: 'Strategic gameplay involving alliance scoring and challenge completion.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Robot+Game',
+      image: '../../public/vex.jpg',
       icon: '🤖'
     },
     {
       title: 'Line Follower',
       description: 'Speed and precision while navigating predefined lines.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Line+Follower',
+      image: '../../public/linefollower.jpg',
       icon: '📏'
     },
     {
       title: 'Robot Combat',
       description: 'Head-to-head engineering battles testing robot durability and performance.',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Robot+Combat',
+      image: '../../public/vex2.jpg',
       icon: '⚔️'
     },
     {
       title: 'Maze Solver',
       description: 'Autonomous robots navigate complex mazes using intelligent programming.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Maze+Solver',
+      image: '../../public/maze.jpg',
       icon: '🌀'
     },
     {
       title: 'Innovation Challenge',
       description: 'Solve real-world problems through creative robotic solutions.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Innovation+Challenge',
+      image: '../../public/challenge.jpg',
       icon: '💡'
     },
     {
-      title: 'Water Rocket',
-      description: 'Design and launch rockets in exciting engineering competitions.',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Water+Rocket',
+      title: 'Ballon Popper',
+      description: 'Design and launch ballon poppers in exciting engineering competitions.',
+      image: '../../public/popper.jpg',
       icon: '🚀'
     }
   ];
@@ -91,19 +91,19 @@ function Competitions() {
       date: 'July 20, 2026',
       title: 'J-Robotics Crowned URL 2025 Champions!',
       description: 'Team J-Robotics from Kampala takes the top prize after an exciting national championship finale.',
-      image: 'https://via.placeholder.com/400x250/ffd700/000000?text=Champions+2025'
+      image: '../../public/competition3.jpg'
     },
     {
       date: 'July 15, 2026',
       title: 'Building More Than Robots: Student Impact Stories',
       description: 'How robotics builds confidence, teamwork, and leadership in Ugandan schools.',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Student+Impact'
+      image: '../../public/news1.jpg'
     },
     {
       date: 'July 10, 2026',
       title: 'Coaches Training Workshop Held in Jinja',
       description: 'Educators from multiple schools received robotics coaching and mentorship training.',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Coaches+Workshop'
+      image: '../../public/training.jpg'
     }
   ];
 
@@ -140,7 +140,7 @@ function Competitions() {
           </div>
           <div className="competitions-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Competition+Robot+10298A" 
+              src="../../public/competition3.jpg" 
               alt="Students operating a competition robot in an arena" 
             />
           </div>
@@ -188,9 +188,9 @@ function Competitions() {
         <div className="season-container">
           <div className="season-content">
             <span className="season-label">CURRENT SEASON</span>
-            <h2>Uganda Robotics League 2026</h2>
+            <h2>Uganda Robotics League 2027</h2>
             <p>
-              The 2026 season challenge promotes excitement, creativity, and real-world 
+              The 2027 season challenge promotes excitement, creativity, and real-world 
               problem solving within the competition arena.
             </p>
             <div className="season-info">
@@ -198,7 +198,7 @@ function Competitions() {
                 <span>📅 Registration Deadline: October 31, 2026</span>
               </div>
               <div className="info-item">
-                <span>🏆 Championship Date: December 15-17, 2026</span>
+                <span>🏆 Championship Date: December 15-17, 2027</span>
               </div>
               <div className="info-item">
                 <span>📍 Venue: Jinja, Uganda</span>
@@ -214,14 +214,20 @@ function Competitions() {
             </div>
           </div>
           <div className="season-video">
-            <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Competition+Arena+Video" 
-              alt="Competition arena with robot" 
-            />
-            <div className="video-play-button">
-              <FaPlay />
-            </div>
-          </div>
+  <video 
+    src="/video1.mp4" 
+    autoPlay 
+    muted 
+    loop 
+    playsInline
+    className="video-element"
+  >
+    Your browser does not support the video tag.
+  </video>
+  <div className="video-play-button">
+    <FaPlay />
+  </div>
+</div>
         </div>
       </section>
 

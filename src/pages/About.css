@@ -217,7 +217,7 @@
   display: block;
 }
 
-/* Founders Section */
+/* Founders Section - Centered Single Card */
 .founders-section {
   padding: 5rem 2rem;
   background: #f8f9fa;
@@ -226,8 +226,9 @@
 .founders-grid {
   max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -238,7 +239,8 @@
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   transition: transform 0.3s, box-shadow 0.3s;
-  align-items: center;
+  max-width: 400px;
+  width: 100%;
 }
 
 .founder-card:hover {
@@ -298,6 +300,19 @@
 
 .founder-social *:hover {
   color: #ff0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founder-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .founder-image {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* Mentors Section */

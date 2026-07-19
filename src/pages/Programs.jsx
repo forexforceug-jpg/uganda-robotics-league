@@ -8,28 +8,28 @@ function Programs() {
       title: 'Primary Robotics',
       description: 'Fun, hands-on activities introducing young learners to STEM and robotics through engaging projects.',
       ageRange: '7–12 years',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Primary+Robotics',
+      image: '../../public/primarystds.jpg',
       icon: '🎮'
     },
     {
       title: 'Lower Secondary Robotics',
       description: 'Build essential skills in design, programming, and teamwork through engaging challenges.',
       ageRange: '13–15 years',
-      image: 'https://via.placeholder.com/400x250/2d6a9f/ffffff?text=Lower+Secondary',
+      image: '../../public/secondary.jpg',
       icon: '⚙️'
     },
     {
       title: 'Advanced Secondary Robotics',
       description: 'Take on advanced engineering and competition challenges at the highest level.',
       ageRange: '16–18 years',
-      image: 'https://via.placeholder.com/400x250/ff0000/ffffff?text=Advanced+Secondary',
+      image: '../../public/highschool.jpg',
       icon: '🏆'
     },
     {
       title: 'University & Open Innovation',
       description: 'Mentorship, research, and innovation opportunities for university students and young innovators.',
       ageRange: '18+ years',
-      image: 'https://via.placeholder.com/400x250/1a3a5c/ffffff?text=University+Innovation',
+      image: '../../public/innovation.jpg',
       icon: '🚀'
     }
   ];
@@ -108,7 +108,7 @@ function Programs() {
           </div>
           <div className="programs-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Working+on+Robot" 
+              src="../../public/competition2.jpg" 
               alt="Students working on a competition robot" 
             />
           </div>
@@ -185,7 +185,7 @@ function Programs() {
         <div className="equipment-container">
           <div className="equipment-image-left">
             <img 
-              src="https://via.placeholder.com/400x300/1a3a5c/ffffff?text=Competition+Robot" 
+              src="../../public/robot.jpg" 
               alt="Competition robot on arena field" 
             />
           </div>
@@ -202,7 +202,7 @@ function Programs() {
           </div>
           <div className="equipment-image-center">
             <img 
-              src="https://via.placeholder.com/300x300/2d6a9f/ffffff?text=Students+Building" 
+              src="../../public/robot2.jpg" 
               alt="Students assembling a robot" 
             />
           </div>

@@ -7,7 +7,7 @@ function Home() {
     {
       title: 'Primary Robotics',
       description: 'Young learners explore robotics fundamentals through hands-on activities.',
-      image: '../../public/primary.jpg'
+      image: '../../public/primarystds.jpg'
     },
     {
       title: 'Lower Secondary Robotics',
@@ -20,8 +20,8 @@ function Home() {
       image: '../../public/highschool.jpg'
     },
     {
-      title: 'University & Open Innovation',
-      description: 'University students work on cutting-edge robotics and AI solutions.',
+      title: 'Open Innovation',
+      description: 'Students work on cutting-edge robotics and AI solutions.',
       image: '../../public/innovation.jpg'
     }
   ];
@@ -33,7 +33,7 @@ function Home() {
     { icon: FaBullseye, title: 'Qualify', desc: 'Compete in qualifying events' },
     { icon: FaTrophy, title: 'Compete', desc: 'Showcase your robot at nationals' },
     { icon: FaStar, title: 'Become Champions', desc: 'Celebrate innovation and teamwork' }
-  ];
+  ]
 
   const news = [
     {
@@ -57,12 +57,12 @@ function Home() {
   ];
 
   const partners = [
-    { name: 'Just Cause Education Outreach', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=Just+Cause' },
+    { name: 'Just Cause Education Outreach', logo: '../../public/logourl.png' },
     { name: 'VEX Robotics', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=VEX' },
     { name: 'Makerere University', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=Makerere' },
-    { name: 'NITA-U', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=NITA-U' },
-    { name: 'DFCU Bank', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=DFCU' },
-    { name: 'Stanbic Bank', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=Stanbic' }
+    { name: 'Jinja Techub', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=NITA-U' },
+    { name: 'Jinja SS', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=DFCU' },
+    { name: '1MC', logo: 'https://via.placeholder.com/150x80/cccccc/000000?text=Stanbic' }
   ];
 
   return (
@@ -159,25 +159,25 @@ function Home() {
         <div className="season-container">
           <div className="season-content">
             <span className="season-label">CURRENT SEASON</span>
-            <h2>Uganda Robotics League 2026</h2>
+            <h2>Uganda Robotics League 2027</h2>
             <p>
-              The 2026 season challenge promotes creativity, excitement, and real-world
+              The 2027 season challenge promotes creativity, excitement, and real-world
               problem solving. Join us in this year's journey!
             </p>
-            <div className="season-info">
-              <div className="info-item">
-                <span>📅 Registration Deadline: October 31, 2026</span>
-              </div>
-              <div className="info-item">
-                <span>🏆 Championship Date: December 15-17, 2026</span>
-              </div>
-              <div className="info-item">
-                <span>📍 Venue: Jinja, Uganda</span>
-              </div>
-              <div className="info-item">
-                <span>👥 Eligibility: All secondary school levels</span>
-              </div>
-            </div>
+  <div className="season-info" style={{ textAlign: 'left', width: '100%' }}>
+  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
+    <span>📅 Registration Deadline: October 31, 2026</span>
+  </div>
+  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
+    <span>🏆 Championship Date: December 15-17, 2026</span>
+  </div>
+  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
+    <span>📍 Venue: Jinja, Uganda</span>
+  </div>
+  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
+    <span>👥 Eligibility: All secondary school levels</span>
+  </div>
+</div>
             <div className="season-buttons">
               <button className="btn-season-primary">View the Challenge</button>
               <button className="btn-season-secondary">Download Rules</button>

@@ -75,11 +75,11 @@ function ProgramDetails() {
   ];
 
   const galleryImages = [
-    'https://via.placeholder.com/250x200/1a3a5c/ffffff?text=Building+Robot',
-    'https://via.placeholder.com/250x200/2d6a9f/ffffff?text=Programming',
-    'https://via.placeholder.com/250x200/ff0000/ffffff?text=Collaborating',
-    'https://via.placeholder.com/250x200/1a3a5c/ffffff?text=Competition',
-    'https://via.placeholder.com/250x200/2d6a9f/ffffff?text=Team+Work'
+    '../../public/team1.jpg',
+    '../../public/team1.jpg',
+    '../../public/team1.jpg',
+    '../../public/team1.jpg',
+    '../../public/team1.jpg'
   ];
 
   return (
@@ -122,7 +122,7 @@ function ProgramDetails() {
           </div>
           <div className="program-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Lower+Secondary+Students" 
+              src="../../public/primary2.jpg" 
               alt="Lower Secondary students building a robot" 
             />
             <div className="program-info-card">
@@ -174,22 +174,23 @@ function ProgramDetails() {
               ))}
             </ul>
           </div>
-          <div className="overview-center">
-            <div className="video-preview">
-              <img 
-                src="https://via.placeholder.com/400x250/1a3a5c/ffffff?text=Program+Video" 
-                alt="Program video preview" 
-              />
-              <div className="video-play-overlay">
-                <div className="video-play-button">
-                  <FaPlay />
-                </div>
-              </div>
-            </div>
-            <a href="#video" className="watch-video-link">
-              Watch Program Video <FaArrowRight />
-            </a>
-          </div>
+         <div className="overview-center">
+  <div className="video-preview">
+    <img 
+      src="../../public/video2.mp4" 
+      alt="Program video preview" 
+    />
+    <div className="video-play-overlay">
+      <div className="video-play-button">
+        <FaPlay />
+      </div>
+    </div>
+    <div className="video-duration-badge">2:30</div>
+  </div>
+  <a href="#video" className="watch-video-link">
+    Watch Program Video <FaArrowRight />
+  </a>
+</div>
           <div className="overview-right">
             <div className="highlights-card">
               <h3>Program Highlights</h3>

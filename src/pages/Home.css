@@ -1,5 +1,16 @@
 /* Reset and Base */
-* {
+/* Force all text in season section to align left */
+.season-section,
+.season-section * {
+  text-align: left !important;
+}
+
+/* Except for the image container */
+.season-image,
+.season-image * {
+  text-align: left !important;
+}
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -292,7 +303,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start; /* Changed from 'center' to 'start' for vertical alignment */
+}
+
+/* Force all text in season-content to align left */
+.season-content {
+  text-align: left;
+  width: 100%;
+}
+
+.season-content * {
+  text-align: left !important;
+}
+
+/* But exclude the season-image from this rule */
+.season-image,
+.season-image * {
+  text-align: left !important;
 }
 
 .season-label {
@@ -301,6 +328,8 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+  display: block;
+  text-align: left !important;
 }
 
 .season-content h2 {
@@ -308,6 +337,7 @@
   font-weight: 900;
   margin: 0.5rem 0 1rem;
   color: #000;
+  text-align: left !important;
 }
 
 .season-content p {
@@ -315,6 +345,7 @@
   line-height: 1.7;
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
+  text-align: left !important;
 }
 
 .season-info {
@@ -322,6 +353,8 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  text-align: left !important;
+  width: 100%;
 }
 
 .info-item {
@@ -329,12 +362,26 @@
   border-bottom: 1px solid #e8e8e8;
   color: #333;
   font-size: 1rem;
+  text-align: left !important;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.info-item span {
+  text-align: left !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .season-buttons {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: left !important;
 }
 
 .btn-season-primary {
@@ -385,6 +432,31 @@
   display: block;
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+  .season-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .season-content h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .season-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .season-buttons {
+    flex-direction: column;
+  }
+  
+  .season-buttons button {
+    width: 100%;
+  }
+}
 /* Journey Section */
 .journey-section {
   padding: 5rem 2rem;

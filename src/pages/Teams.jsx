@@ -12,18 +12,18 @@ function Teams() {
       description: 'Passionate innovators building robots and solutions for a better tomorrow.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=J-Robotics',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=JR'
+      image: '../../public/competition3.jpg',
+      logo: '../../public/competition3.jpg'
     },
     {
-      name: 'The Fusbots',
+      name: 'The Fusebots',
       school: 'Busoga College Mwiri',
       district: 'Kamuli District',
       description: 'Excellence, teamwork, engineering, and innovation through robotics.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: 'https://via.placeholder.com/400x200/2d6a9f/ffffff?text=The+Fusbots',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=FB'
+      image: '../../public/fusebots.jpg',
+      logo: '../../public/fusebots.jpg'
     },
     {
       name: 'Tech Titans',
@@ -32,58 +32,58 @@ function Teams() {
       description: 'Programming, precision, and competitive robotics excellence.',
       level: 'Lower Secondary',
       category: 'Line Follower',
-      image: 'https://via.placeholder.com/400x200/ff0000/ffffff?text=Tech+Titans',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=TT'
+      image: '../../public/techtitans.jpg',
+      logo: '../../public/techtitans.jpg'
     },
     {
-      name: 'Mech Mavericks',
-      school: 'Ndejje Secondary School',
-      district: 'Wakiso District',
+      name: 'Igabots 1',
+      school: 'Iganga SS',
+      district: 'Iganga District',
       description: 'Innovation and leadership through robotics engineering.',
       level: 'Advanced Secondary',
       category: 'Robot Combat',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=Mech+Mavericks',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=MM'
+      image: '../../public/igabots1.jpg',
+      logo: '../../public/igabots1.jpg'
     },
     {
-      name: 'Code Commanders',
-      school: 'Makerere College School',
-      district: 'Kampala District',
+      name: 'VoraBots',
+      school: 'Jinja SS',
+      district: 'Jinja District',
       description: 'Creativity through coding and robotics innovation.',
       level: 'Lower Secondary',
       category: 'Maze Solver',
-      image: 'https://via.placeholder.com/400x200/2d6a9f/ffffff?text=Code+Commanders',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=CC'
+      image: '../../public/vorabots.jpg',
+      logo: '../../public/vorabots.jpg'
     },
     {
-      name: 'Robo Eagles',
+      name: 'Smith Bots',
       school: 'Mbale Secondary School',
       district: 'Mbale District',
       description: 'Engineering strong, future-ready robots for competition.',
       level: 'Advanced Secondary',
       category: 'Robot Game',
-      image: 'https://via.placeholder.com/400x200/ff0000/ffffff?text=Robo+Eagles',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=RE'
+      image: '../../public/smith.jpg',
+      logo: '../../public/smith.jpg'
     },
     {
-      name: 'Phoenix Robotics',
-      school: "St. Julian High School",
-      district: 'Wakiso District',
+      name: 'Y-Botics II',
+      school: "Wanyange Girls",
+      district: 'Jinja District',
       description: 'Rising above challenges through innovation and teamwork.',
       level: 'Advanced Secondary',
       category: 'Innovation Challenge',
-      image: 'https://via.placeholder.com/400x200/1a3a5c/ffffff?text=Phoenix+Robotics',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=PR'
+      image: '../../public/ybots.jpg',
+      logo: '../../public/ybots.jpg'
     },
     {
-      name: 'Iron Gears',
-      school: 'Mengo Secondary School',
-      district: 'Kampala District',
+      name: 'Cyber Nights',
+      school: 'Soroti Secondary School',
+      district: 'Soroti District',
       description: 'Discipline, passion, and innovation in Line Follower competitions.',
-      level: 'Lower Secondary',
+      level: 'Advanced Secondary',
       category: 'Line Follower',
-      image: 'https://via.placeholder.com/400x200/2d6a9f/ffffff?text=Iron+Gears',
-      logo: 'https://via.placeholder.com/80x80/ff0000/ffffff?text=IG'
+      image: '../../public/cyber.jpg',
+      logo: '../../public/cyber.jpg'
     }
   ];
 
@@ -120,7 +120,7 @@ function Teams() {
           </div>
           <div className="teams-hero-right">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=Students+Building+Robot" 
+              src="../../public/team1.jpg" 
               alt="Students building a competition robot" 
             />
           </div>
@@ -195,7 +195,7 @@ function Teams() {
         <div className="featured-container">
           <div className="featured-image">
             <img 
-              src="https://via.placeholder.com/600x400/1a3a5c/ffffff?text=J-Robotics+Competition" 
+              src="../../public/competition3.jpg" 
               alt="J-Robotics team in competition" 
             />
           </div>
