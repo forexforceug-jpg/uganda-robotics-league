@@ -7,48 +7,48 @@ import './About.css';
 function About() {
   const founders = [
     {
-      name: 'Mischell Massaro',
-      role: 'Founder',
-      bio: 'Engineer and strategist focused on creating impactful learning experiences and building strong robotics programs.',
+      name: 'MICHELLE MASSARO',
+      role: 'Co-Founder & Director',
+      bio: 'Michelle is a Visual Arts teacher with the LDCSB and a FIRST Robotics lead mentor. This is where the passion for teaching & introducing STEAM to students in Uganda began! As the robotics program lead, Michelle chaperones & organizes each of our Ugandan robotics teams for international competitions and regional tournaments, as well as ongoing school outreach programs. In addition to this, Michelle develops curriculum and workshops, project phasing and framework, sources & manages equipment and speaks at events. She also leads our volunteer teams, our on-site student-teacher training, and is our project development coordinator in Uganda.',
       image: '/image.png'
     },
   ];
 
   const mentors = [
     {
-      name: 'Ssemanda Godwin',
-      role: 'Robotics & AI Specialist',
-      bio: 'Expert in artificial intelligence and robotics with 10+ years of experience.',
+      name: 'ALEX NABONGHO ',
+      role: 'UGANDAN COORDINATOR',
+      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda.',
       image: 'https://via.placeholder.com/150x150/ff0000/ffffff?text=Grace'
     },
     {
-      name: 'Katalo Abu Baker',
-      role: 'Mechatronics Engineer',
-      bio: 'Specializes in robotics design and mechanical systems integration.',
+      name: 'Katalo Abubaker',
+      role: 's.T.E.A.M education OUTREACH COORDINATOR',
+      bio: 'Baker first became involved with Just Cause in 2016. He was a member of the JRobotics Team in highschool and has since become one of our STEAM Education Outreach Coordinators. He helps mentor robotics teams and teaches robotics through outreach programs to schools.',
       image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Peter'
     },
     {
       name: 'Mpala Ronald',
-      role: 'STEM Education Specialist',
-      bio: 'Curriculum developer focused on making robotics accessible to all students.',
+      role: 's.T.E.A.M education OUTREACH COORDINATOR ',
+      bio: 'Ronnie first became involved with Just Cause in 2016. He was a member of the JRobotics Team in highschool and has since become one of our STEAM Education Outreach Coordinators. He helps mentor robotics teams and teaches robotics through outreach programs to schools.',
       image: 'https://via.placeholder.com/150x150/2d6a9f/ffffff?text=Janet'
     },
     {
-      name: 'Avi',
-      role: 'Software Architect',
-      bio: 'Leads software development for robotics control systems and applications.',
+      name: 'Ziwa Picavet',
+      role: 's.T.E.A.M education OUTREACH COORDINATOR',
+      bio: 'Picavet first became involved with Just Cause in 2016. He was a member of the JRobotics Team in highschool and has since become one of our STEAM Education Outreach Coordinators. He helps mentor robotics teams and teaches robotics through outreach programs to schools.',
       image: 'https://via.placeholder.com/150x150/ff0000/ffffff?text=Robert'
     },
     {
-      name: 'Iddi',
-      role: 'Innovation Coach',
-      bio: 'Mentors students in design thinking and creative problem solving.',
+      name: 'Ssemanda Godwin',
+      role: 's.T.E.A.M education OUTREACH COORDINATOR',
+      bio: 'Godwin first became involved with Just Cause in 2016. He was a member of the JRobotics Team in highschool and has since become one of our STEAM Education Outreach Coordinators. He helps mentor robotics teams and teaches robotics through outreach programs to schools.',
       image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Alice'
     },
     {
-      name: 'Madam Teo',
-      role: 'Entrepreneurship Lead',
-      bio: 'Guides students in turning robotics innovations into sustainable ventures.',
+      name: 'SARA HANSEN',
+      role: 'Co-Founder and Director',
+      bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker and leads our volunteer teams. ',
       image: 'https://via.placeholder.com/150x150/2d6a9f/ffffff?text=David'
     }
   ];
@@ -60,32 +60,7 @@ function About() {
     { icon: MdShield, title: 'Integrity', desc: 'Honesty, accountability, and ethical leadership.' },
     { icon: FaGlobe, title: 'Inclusion', desc: 'Equal opportunities and accessibility for everyone.' }
   ];
-  const faqs = [
-  {
-    question: 'How can I register my team for the URL season?',
-    answer: 'Team registration can be completed online through the "Register a Team" button on our navigation bar. You will need to provide your school name, team name, coach information, and contact details. Registration is open from 1st May to 30th September 2026.'
-  },
-  {
-    question: 'What are the eligibility requirements for teams?',
-    answer: 'Teams must consist of students enrolled in Ugandan secondary schools. Each team should have 2-5 members and at least one adult coach or mentor. Students from S1 to S6 are eligible to participate.'
-  },
-  {
-    question: 'Where can I find the competition rules and game manual?',
-    answer: 'The official competition rules and game manual can be found in the Resources section under "Competition Resources" or directly from the Competitions page. You can also download the PDF version from our website.'
-  },
-  {
-    question: 'How can my school or organization become a partner?',
-    answer: 'Organizations interested in partnering with us can visit our Partners page and click the "Become a Partner" button, or contact our partnerships team directly via email at partnerships@ugandaroboticsleague.org.'
-  },
-  {
-    question: 'Do you offer robotics training or workshops?',
-    answer: 'Yes! We offer regular training workshops, coaching sessions, and bootcamps for students and educators throughout the year. Check our Programs and Resources pages for upcoming opportunities and schedules.'
-  },
-  {
-    question: 'How can I volunteer with the Uganda Robotics League?',
-    answer: 'We welcome volunteers for events, workshops, and mentorship programs. Visit our Get Involved section or contact our volunteer coordinator at volunteer@ugandaroboticsleague.org for current opportunities.'
-  }
-];
+  
 
   const timeline = [
     { year: '2018', desc: 'Uganda Robotics League founded with a vision to promote robotics education in Uganda.' },
