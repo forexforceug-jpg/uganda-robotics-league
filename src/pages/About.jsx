@@ -19,10 +19,10 @@ function About() {
       image: '/sarah1.png'
     },
     {
-      name: 'CEPO CARTHEY',
+      name: 'CEPO CATHY',
       role: 'Co-Founder & Director',
       bio: 'Cepo is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker. ',
-      image: '/sarah1.png'
+      image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Peter'
     },
      {
       name: 'ALEX NABONGHO',
