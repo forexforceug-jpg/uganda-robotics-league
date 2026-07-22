@@ -144,7 +144,7 @@ function About() {
    {/* Founders Section */}
       <section className="founders-section">
         <div className="section-header">
-          <h2>OUR FOUNDERS</h2>
+          <h2>OUR FOUNDERS & DIRECTORS</h2>
           <div className="red-underline"></div>
         </div>
         <div className="founders-grid">
