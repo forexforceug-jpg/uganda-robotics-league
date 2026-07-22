@@ -9,7 +9,7 @@ function About() {
     {
       name: 'ALEX NABONGHO',
       role: 'UGANDAN COORDINATOR',
-      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda.',
+      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda for international competitions and regional tournaments.',
       image: '/alex.png'
     },
     {
@@ -21,7 +21,7 @@ function About() {
     {
       name: 'SARA HANSEN',
       role: 'Co-Founder',
-      bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker and leads our volunteer teams. ',
+      bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker. ',
       image: '/sarah.png'
     },
   ];
