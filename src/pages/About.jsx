@@ -7,20 +7,26 @@ import './About.css';
 function About() {
   const founders = [
     {
+      name: 'ALEX NABONGHO',
+      role: 'UGANDAN COORDINATOR',
+      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda.',
+      image: '/alex.png'
+    },
+    {
       name: 'MICHELLE MASSARO',
       role: 'Co-Founder & Director',
       bio: 'Michelle is a Visual Arts teacher with the LDCSB and a FIRST Robotics lead mentor. This is where the passion for teaching & introducing STEAM to students in Uganda began! As the robotics program lead, Michelle chaperones & organizes each of our Ugandan robotics teams for international competitions and regional tournaments, as well as ongoing school outreach programs. In addition to this, Michelle develops curriculum and workshops, project phasing and framework, sources & manages equipment and speaks at events. She also leads our volunteer teams, our on-site student-teacher training, and is our project development coordinator in Uganda.',
       image: '/image.png'
     },
+    {
+      name: 'SARA HANSEN',
+      role: 'Co-Founder',
+      bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker and leads our volunteer teams. ',
+      image: '/sarah.png'
+    },
   ];
 
   const mentors = [
-    {
-      name: 'ALEX NABONGHO ',
-      role: 'UGANDAN COORDINATOR',
-      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda.',
-      image: 'https://via.placeholder.com/150x150/ff0000/ffffff?text=Grace'
-    },
     {
       name: 'Katalo Abubaker',
       role: 's.T.E.A.M education OUTREACH COORDINATOR',
@@ -45,12 +51,6 @@ function About() {
       bio: 'Godwin first became involved with Just Cause in 2016. He was a member of the JRobotics Team in highschool and has since become one of our STEAM Education Outreach Coordinators. He helps mentor robotics teams and teaches robotics through outreach programs to schools.',
       image: 'https://via.placeholder.com/150x150/1a3a5c/ffffff?text=Alice'
     },
-    {
-      name: 'SARA HANSEN',
-      role: 'Co-Founder and Director',
-      bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker and leads our volunteer teams. ',
-      image: 'https://via.placeholder.com/150x150/2d6a9f/ffffff?text=David'
-    }
   ];
 
   const values = [
@@ -72,34 +72,37 @@ function About() {
 
   return (
     <div className="about-page">
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-hero-overlay"></div>
-        <div className="about-hero-content">
-          <div className="about-hero-left">
-            <div className="breadcrumb">
-              <span>Home</span>
-              <span className="breadcrumb-separator">›</span>
-              <span className="breadcrumb-current">About Us</span>
-            </div>
-            <h1>About the Uganda Robotics League</h1>
-            <p>
-              A community of innovators, educators, and problem solvers building the future 
-              through robotics education, innovation, and competition.
-            </p>
-            <div className="about-hero-buttons">
-              <button className="btn-about-primary">Our Story</button>
-              <button className="btn-about-secondary">Join Our Mission</button>
-            </div>
-          </div>
-          <div className="about-hero-right">
-            <img 
-              src="/hero2.jpg" 
-              alt="Students building a robotics competition robot" 
-            />
-          </div>
-        </div>
-      </section>
+ {/* Hero Section */}
+<section className="about-hero">
+  <div className="about-hero-overlay"></div>
+  <div className="about-hero-content">
+    <div className="about-hero-left">
+      <div className="breadcrumb">
+        <span>Home</span>
+        <span className="breadcrumb-separator">›</span>
+        <span className="breadcrumb-current">About Us</span>
+      </div>
+      <h1>About the Uganda Robotics League</h1>
+      <p>
+        A community of innovators, educators, and problem solvers building the future 
+        through robotics education, innovation, and competition.
+      </p>
+      <div className="about-hero-buttons">
+        <button className="btn-about-primary">Our Story</button>
+        <button className="btn-about-secondary">Join Our Mission</button>
+      </div>
+    </div>
+    <div className="about-hero-right">
+      <div className="about-image-wrapper">
+        <img 
+          src="/hero2.jpg" 
+          alt="Students building a robotics competition robot" 
+        />
+        <div className="about-image-overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Mission Section */}
       <section className="mission-section">
@@ -138,7 +141,7 @@ function About() {
         </div>
       </section>
 
-      {/* Founders Section */}
+   {/* Founders Section */}
       <section className="founders-section">
         <div className="section-header">
           <h2>OUR FOUNDERS</h2>
@@ -154,15 +157,18 @@ function About() {
               <span className="founder-role">{founder.role}</span>
               <p>{founder.bio}</p>
               <div className="founder-social">
-                <FaLinkedin />
-                <FaTwitter />
+                <a href={founder.linkedin} target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href={founder.twitter} target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
                 <FaEnvelope />
               </div>
             </div>
           ))}
         </div>
       </section>
-
       {/* Mentors Section */}
       <section className="mentors-section">
         <div className="section-header">

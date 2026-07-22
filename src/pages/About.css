@@ -7,7 +7,9 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Hero Section */
+/* ============================================
+   ABOUT HERO SECTION - COMPLETE
+   ============================================ */
 .about-hero {
   position: relative;
   width: 100%;
@@ -15,16 +17,18 @@
   background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
   display: flex;
   align-items: center;
-  padding: 6rem 0;
+  padding: 4rem 0;
+  overflow: hidden;
 }
 
 .about-hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 70%, transparent 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 70%, transparent 100%);
+  z-index: 1;
 }
 
 .about-hero-content {
@@ -42,6 +46,8 @@
 
 .about-hero-left {
   color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .breadcrumb {
@@ -61,18 +67,19 @@
 }
 
 .about-hero-left h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 900;
   margin-bottom: 1.5rem;
   line-height: 1.1;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.3);
 }
 
 .about-hero-left p {
   font-size: 1.2rem;
   line-height: 1.7;
   color: #ccc;
-  margin-bottom: 2rem;
   max-width: 550px;
+  margin-bottom: 2rem;
 }
 
 .about-hero-buttons {
@@ -95,8 +102,8 @@
 
 .btn-about-primary:hover {
   background: #cc0000;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
 }
 
 .btn-about-secondary {
@@ -114,20 +121,195 @@
 .btn-about-secondary:hover {
   background: white;
   color: #000;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
+/* ============================================
+   ABOUT HERO IMAGE - ENHANCED
+   ============================================ */
 .about-hero-right {
-  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  aspect-ratio: 16/10;
+  transform: perspective(1200px) rotateY(-4deg) scale(0.98);
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.about-hero-right img {
+.about-hero-right:hover {
+  transform: perspective(1200px) rotateY(0deg) scale(1);
+  box-shadow: 0 35px 90px rgba(255, 0, 0, 0.2);
+}
+
+.about-image-wrapper {
+  position: relative;
   width: 100%;
-  height: 400px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 1.2s ease;
+}
+
+.about-hero-right:hover .about-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Image overlay for visual depth */
+.about-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Decorative corner accent */
+.about-hero-right::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 120px;
+  height: 120px;
+  border-top: 4px solid #ff0000;
+  border-left: 4px solid #ff0000;
+  border-radius: 24px 0 0 0;
+  z-index: 3;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.about-hero-right:hover::before {
+  width: 180px;
+  height: 180px;
+  opacity: 1;
+}
+
+/* Bottom right decorative accent */
+.about-hero-right::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 80px;
+  height: 80px;
+  border-bottom: 4px solid #ff0000;
+  border-right: 4px solid #ff0000;
+  border-radius: 0 0 24px 0;
+  z-index: 3;
+  opacity: 0.4;
+  transition: all 0.4s ease;
+}
+
+.about-hero-right:hover::after {
+  width: 120px;
+  height: 120px;
+  opacity: 1;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .about-hero-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .about-hero-left h1 {
+    font-size: 2.8rem;
+  }
+  
+  .about-hero-overlay {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%);
+  }
+  
+  .about-hero-right {
+    max-width: 600px;
+    margin: 0 auto;
+    transform: none;
+    aspect-ratio: 16/9;
+  }
+  
+  .about-hero-right:hover {
+    transform: none;
+  }
+  
+  .about-hero-right::before,
+  .about-hero-right::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 480px;
+    padding: 3rem 0;
+  }
+  
+  .about-hero-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-content {
+    padding: 0 1.5rem;
+  }
+  
+  .about-hero-right {
+    aspect-ratio: 16/10;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+  
+  .about-image-overlay {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    min-height: 400px;
+    padding: 2rem 0;
+  }
+  
+  .about-hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero-left p {
+    font-size: 1rem;
+  }
+  
+  .about-hero-buttons {
+    flex-direction: column;
+  }
+  
+  .about-hero-buttons button {
+    width: 100%;
+  }
+  
+  .about-hero-right {
+    aspect-ratio: 16/10;
+    border-radius: 12px;
+  }
+  
+  .about-hero-right::before,
+  .about-hero-right::after {
+    display: none;
+  }
 }
 
 /* Mission Section */

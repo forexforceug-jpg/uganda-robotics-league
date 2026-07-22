@@ -28,7 +28,6 @@ function Navbar() {
                 alt="Uganda Robotics League Logo" 
                 className="logo-image"
               />
-              <span className="logo-sub">URL</span>
             </div>
           </Link>
 

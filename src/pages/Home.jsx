@@ -1,9 +1,30 @@
+import { useState, useEffect } from 'react';
 import { FaUsers, FaUserGraduate, FaMapMarkerAlt, FaTrophy, FaArrowRight, FaUserPlus, FaBookOpen, FaTools, FaBullseye, FaStar } from 'react-icons/fa';
 import { MdPeople } from 'react-icons/md';
 import StatsCounter from '../components/StatsCounter';
 import './Home.css';
 
 function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const heroImages = [
+    { src: '/heroimg.jpg', alt: 'Ugandan students building a robot' },
+    { src: '/news1.jpg', alt: 'Students collaborating on robotics project' },
+    { src: '/news4.jpg', alt: 'Robotics competition in action' },
+    { src: '/news6.jpg', alt: 'Students celebrating robotics achievement' }
+  ];
+
+  // Auto-change images every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
+  const currentImage = heroImages[currentImageIndex];
+
   const programs = [
     {
       title: 'Primary Robotics',
@@ -34,7 +55,7 @@ function Home() {
     { icon: FaBullseye, title: 'Qualify', desc: 'Compete in qualifying events' },
     { icon: FaTrophy, title: 'Compete', desc: 'Showcase your robot at nationals' },
     { icon: FaStar, title: 'Become Champions', desc: 'Celebrate innovation and teamwork' }
-  ]
+  ];
 
   const news = [
     {
@@ -68,41 +89,50 @@ function Home() {
 
   return (
     <div className="home-page">
-     {/* Hero Section */}
-<section className="hero-section">
-  <div className="hero-overlay"></div>
-  <div className="hero-content">
-    <div className="hero-text">
-      <h1>
-        Building Uganda's<br />
-        <span className="hero-highlight">Next Generation</span><br />
-        of Innovators
-      </h1>
-      <p>
-        The Uganda Robotics League brings students, schools, and communities together
-        through robotics education and exciting competitions.
-      </p>
-      <div className="hero-buttons">
-        <button className="btn-hero-primary">Explore the League</button>
-        <button className="btn-hero-secondary">Register Your Team</button>
-      </div>
-    </div>
-    <div className="hero-image">
-      <img 
-        src="/heroimg.jpg" 
-        alt="Ugandan students building a robot" 
-      />
-    </div>
-  </div>
-  <div className="hero-slider-dots">
-    <span className="dot active"></span>
-    <span className="dot"></span>
-    <span className="dot"></span>
-    <span className="dot"></span>
-  </div>
-</section>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>
+              Building Uganda's<br />
+              <span className="hero-highlight">Next Generation</span><br />
+              of Innovators
+            </h1>
+            <p>
+              The Uganda Robotics League brings students, schools, and communities together
+              through robotics education and exciting competitions.
+            </p>
+            <div className="hero-buttons">
+              <button className="btn-hero-primary">Explore the League</button>
+              <button className="btn-hero-secondary">Register Your Team</button>
+            </div>
+          </div>
+          <div className="hero-image">
+            <div className="hero-image-inner">
+              <img 
+                src={currentImage.src} 
+                alt={currentImage.alt} 
+                className="hero-slide-image"
+              />
+            </div>
+            <div className="hero-image-counter">
+              {currentImageIndex + 1} / {heroImages.length}
+            </div>
+          </div>
+        </div>
+        <div className="hero-slider-dots">
+          {heroImages.map((_, index) => (
+            <span 
+              key={index} 
+              className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+              onClick={() => setCurrentImageIndex(index)}
+            />
+          ))}
+        </div>
+      </section>
 
-           {/* Statistics Panel */}
+      {/* Statistics Panel */}
       <div className="stats-panel">
         <div className="stats-container">
           <StatsCounter 
@@ -165,20 +195,20 @@ function Home() {
               The 2027 season challenge promotes creativity, excitement, and real-world
               problem solving. Join us in this year's journey!
             </p>
-  <div className="season-info" style={{ textAlign: 'left', width: '100%' }}>
-  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
-    <span>📅 Registration Deadline: October 31, 2026</span>
-  </div>
-  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
-    <span>🏆 Championship Date: December 15-17, 2026</span>
-  </div>
-  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
-    <span>📍 Venue: Jinja, Uganda</span>
-  </div>
-  <div className="info-item" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', justifyContent: 'flex-start' }}>
-    <span>👥 Eligibility: All secondary school levels</span>
-  </div>
-</div>
+            <div className="season-info">
+              <div className="info-item">
+                <span>📅 Registration Deadline: October 31, 2026</span>
+              </div>
+              <div className="info-item">
+                <span>🏆 Championship Date: December 15-17, 2026</span>
+              </div>
+              <div className="info-item">
+                <span>📍 Venue: Jinja, Uganda</span>
+              </div>
+              <div className="info-item">
+                <span>👥 Eligibility: All secondary school levels</span>
+              </div>
+            </div>
             <div className="season-buttons">
               <button className="btn-season-primary">View the Challenge</button>
               <button className="btn-season-secondary">Download Rules</button>
