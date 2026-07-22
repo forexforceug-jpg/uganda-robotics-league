@@ -7,12 +7,6 @@ import './About.css';
 function About() {
   const founders = [
     {
-      name: 'ALEX NABONGHO',
-      role: 'UGANDAN COORDINATOR',
-      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda for international competitions and regional tournaments.',
-      image: '/alex.png'
-    },
-    {
       name: 'MICHELLE MASSARO',
       role: 'Co-Founder & Director',
       bio: 'Michelle is a Visual Arts teacher with the LDCSB and a FIRST Robotics lead mentor. This is where the passion for teaching & introducing STEAM to students in Uganda began! As the robotics program lead,, Michelle chaperones & organizes each of our Ugandan robotics teams for international competitions and regional tournaments.',
@@ -20,9 +14,15 @@ function About() {
     },
     {
       name: 'SARA HANSEN',
-      role: 'Co-Founder',
+      role: 'Co-Founder & Director',
       bio: 'Sara is a high school leadership teacher for the WRDSB. She serves as the secretary and treasurer for Just Cause while in Canada. In addition to this role, she oversees our fundraising, develops project framework and project phasing, reports to the CRA and communicates progress with sponsors. She is also our lead guest speaker. ',
       image: '/sarah.png'
+    },
+     {
+      name: 'ALEX NABONGHO',
+      role: 'UGANDAN COORDINATOR',
+      bio: 'Alex has served as the Ugandan co-ordinator since 2012 with Just Cause. He is the link to the programs and projects between the team in Canada and Uganda. Alex co-ordinates and leads the team when there are Just Cause volunteers on the ground in Uganda for international competitions and regional tournaments. He is also a mentor',
+      image: '/alex.png'
     },
   ];
 
