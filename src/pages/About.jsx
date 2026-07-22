@@ -15,7 +15,7 @@ function About() {
     {
       name: 'MICHELLE MASSARO',
       role: 'Co-Founder & Director',
-      bio: 'Michelle is a Visual Arts teacher with the LDCSB and a FIRST Robotics lead mentor. This is where the passion for teaching & introducing STEAM to students in Uganda began! As the robotics program lead.',
+      bio: 'Michelle is a Visual Arts teacher with the LDCSB and a FIRST Robotics lead mentor. This is where the passion for teaching & introducing STEAM to students in Uganda began! As the robotics program lead,, Michelle chaperones & organizes each of our Ugandan robotics teams for international competitions and regional tournaments.',
       image: '/image.png'
     },
     {
